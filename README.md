@@ -129,18 +129,18 @@
   - Examples of **linear data structures** are **Array**, **Stack**, **Queue**, **Linked List**, etc.
     <br />
 
-  - **Static Data Structure**
+  - #### Static Data Structure
     - **Static data structure** has a **fixed memory size**. It is **easier to access the elements** in a **static data structure**. 
   <br>
 
-      - An example of this **data structure** is an **Array**.
+    - An example of this **data structure** is an **Array**.
     <br>
 
-  - **Dynamic Data Structure** 
+  - #### Dynamic Data Structure
     - In **dynamic data structure**, the size is **not fixed**. It can be randomly updated during the runtime which may be considered efficient concerning the memory (space) complexity of the code. 
   <br>
 
-      - Examples of this **data structure** are **Queue**, **Stack**, **Linked List** etc.
+    - Examples of this **data structure** are **Queue**, **Stack**, **Linked List** etc.
 
 
 - ### Non-linear Data Structure
@@ -151,58 +151,58 @@
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="need_ds">Need of Data Structures</h4>
+<h2 id="need_ds">Need of Data Structures</h2>
 
 As applications are getting **complexed** and **amount of data is increasing day by day**, there may arrise the following problems:
 
-- **Processor Speed**
+- ### Processor Speed
   - To handle very large amout of data, high speed processing is required, but as the data is growing day by day to the billions of files per entity, processor may fail to deal with that much amount of data.
 
-- **Data Search** 
+- ### Data Search 
   - Consider an inventory size of 106 items in a store, If our application needs to search for a particular item, it needs to traverse 106 items every time, results in slowing down the search process.
 
-- **Multiple Requests**
+- ### Multiple Requests
   -  If thousands of users are searching the data simultaneously on a web server, then there are the chances that a very large server can be failed during that process
 
 in order to **solve the above problems**, **data structures are used**. Data is organized to form a data structure in such a way that all items are not required to be searched and required data can be searched instantly.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="advantage_ds">The following are the advantages of a Data Structure:</h4>
+<h3 id="advantage_ds">The following are the advantages of a Data Structure:</h3>
 
-- **Efficiency**
+- #### Efficiency
   -  If the choice of a data structure for implementing a particular ADT is proper, it makes the program very efficient in terms of time and space.
-- **Reusability**
+- #### Reusability
   -  The data structure provides reusability means that multiple client programs can use the data structure.
-- **Abstraction**
+- #### Abstraction
   -  The data structure specified by an ADT also provides the level of abstraction. The client cannot see the internal working of the data structure, so it does not have to worry about the implementation part. The client can only see the interface.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id ="DS_operation">Common operations that can be performed on the Data Structures are:</h4>
+<h3 id ="DS_operation">Common operations that can be performed on the Data Structures are:</h3>
 
-- **Searching** 
+- #### Searching 
   - We can search for any element in a data structure.
-- **Sorting** 
+- #### Sorting 
   - We can sort the elements of a data structure either in an ascending or descending order.
-- **Insertion**
+- #### Insertion
   -  We can also insert the new element in a data structure.
-- **Updation**
+- #### Updation
   -  We can also update the element, i.e., we can replace the element with another element.
-- **Deletion** 
+- #### Deletion 
   - We can also perform the delete operation to remove the element from the data structure.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="Usage_of_DS">Data Structures are used in various fields such as:</h4>
+<h3 id="Usage_of_DS">Data Structures are used in various fields such as:</h3>
 
-- Operating system
-- Graphics
-- Computer Design
-- Blockchain
-- Genetics
-- Image Processing
-- Simulation etc.
+- #### Operating system
+- #### Graphics
+- #### Computer Design
+- #### Blockchain
+- #### Genetics
+- #### Image Processing
+- #### Simulation etc.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
@@ -213,88 +213,88 @@ in order to **solve the above problems**, **data structures are used**. Data is 
 
 - The **formal definition of an algorithm** is that it contains the **finite set of instructions** which are being carried in a **specific order** to perform the specific task. It is **not the complete program** or **code**; it is **just a solution (logic) of a problem**, which can be represented either as an informal description using a **Flowchart** or **Pseudocode**.
 
-<h4 id="char_algorithm">The following are the Characteristics of an Algorithm:</h4>
+<h3 id="char_algorithm">The following are the Characteristics of an Algorithm:</h3>
 
-- **Input**
+- #### Input
   - An algorithm has some input values. We can pass 0 or some input value to an algorithm.
-- **Output**
+- #### Output
   - We will get 1 or more output at the end of an algorithm.
-- **Unambiguity**
+- #### Unambiguity
   - An algorithm should be unambiguous which means that the instructions in an algorithm should be **clear and simple**.
-- **Finiteness**
+- #### Finiteness
   - An algorithm should have finiteness. Here, finiteness means that the algorithm should contain a limited number of instructions, i.e., the instructions should be **countable**.
-- **Effectiveness**
+- #### Effectiveness
   - An algorithm should be effective as each instruction in an algorithm affects the overall process.
-- **Language independent**
+- #### Language independent
   - An algorithm must be language-independent so that the instructions in an algorithm can be implemented in **any of the languages** with the same output.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="dataflow">Dataflow of an Algorithm</h4>
+<h2 id="dataflow">Dataflow of an Algorithm</h2>
 
-- **Problem**
+- #### Problem
   - A problem can be a real-world problem or any instance from the real-world problem for which we need to create a program or the set of instructions. The set of instructions is known as an algorithm.
-- **Algorithm**
+- #### Algorithm
   - An algorithm will be designed for a problem which is a step by step procedure.
-- **Input**
+- #### Input
   - After designing an algorithm, the required and the desired inputs are provided to the algorithm.
-- **Processing Unit**
+- #### Processing Unit
   - The input will be given to the processing unit, and the processing unit will produce the desired output.
-- **Output**
+- #### Output
   - The output is the outcome or the result of the program.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="need_algo">We need Algorithms because of the following reasons:</h4>
+<h3 id="need_algo">We need Algorithms because of the following reasons:</h3>
 
-- **Scalability**
+- #### Scalability
   - It helps us to understand the scalability. When we have a big real-world problem, we need to scale it down into **small-small steps** to **easily analyze** the problem.
-- **Performance**
+- #### Performance
   -  The real-world is not easily broken down into smaller steps. If the problem can be easily broken into smaller steps means that the problem is feasible.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="algo_factors">The following are the factors that we need to consider for Designing an Algorithm:</h4>
+<h3 id="algo_factors">The following are the factors that we need to consider for Designing an Algorithm:</h3>
 
-- **Modularity**
+- #### Modularity
   -  If any problem is given and we can break that problem into **small-small modules** or **small-small steps**, which is a basic definition of an algorithm, it means that this feature has been perfectly designed for the algorithm.
-- **Correctness** 
+- #### Correctness 
   - The correctness of an algorithm is defined as when the **given inputs produce the desired output**, which means that the algorithm has been designed algorithm. The analysis of an algorithm has been done correctly.
-- **Maintainability**
+- #### Maintainability
   - Here, maintainability means that the algorithm should be designed in a **very simple structured** way so that when we **redefine** the algorithm, **no major change will be done** in the algorithm.
-- **Functionality**
+- #### Functionality
   - It considers **various logical steps** to solve the real-world problem.
-- **Robustness**
+- #### Robustness
   - Robustness means that how an algorithm can **clearly define our problem**.
-- **User-friendly**
+- #### User-friendly
   - If the algorithm is not user-friendly, then the designer will not be able to explain it to the programmer.
-- **Simplicity** 
+- #### Simplicity 
   - If the algorithm is **simple** then it is **easy to understand**.
-- **Extensibility**
+- #### Extensibility
   - If any other algorithm designer or programmer wants to use your algorithm then it should be extensible.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="importance_algo">Importance of Algorithms</h4>
+<h2 id="importance_algo">Importance of Algorithms</h2>
 
-- **Theoretical importance**
+- ### Theoretical Importance
   - When any real-world problem is given to us and we break the problem into small-small modules. To break down the problem, we should know all the theoretical aspects.
-- **Practical importance**
+- ### Practical Importance
   - As we know that **theory cannot be completed without the practical implementation**. So, the importance of **algorithm** can be **considered as both theoretical and practical**.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="issues_algo">The following are the issues that come while Designing an Algorithm:</h4>
+<h3 id="issues_algo">The following are the issues that come while Designing an Algorithm:</h3>
 
-- **How to design algorithms**
+- #### How to design algorithms
   -  As we know that an algorithm is a step-by-step procedure so we must follow some steps to design an algorithm.
-- **How to analyze algorithm efficiency**
+- #### How to analyze algorithm efficiency
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id=="appro_algo">The following are the approaches used after considering both the theoretical and practical importance of designing an algorithm:</h4>
+<h3 id=="appro_algo">The following are the approaches used after considering both the theoretical and practical importance of designing an algorithm:</h3>
 
-- **Brute force algorithm** 
+- #### Brute force algorithm 
   - The **general logic structure** is applied to **design an algorithm**. It is also known as an **exhaustive search algorithm** that searches all the **possibilities** to provide the required solution. Such algorithms are of two types:
     - **Optimizing**
       - Finding **all the solutions of a problem** and then take out the **best solution** or if the value of the best solution is known then it will terminate if the best solution is known.
@@ -302,15 +302,15 @@ in order to **solve the above problems**, **data structures are used**. Data is 
       -  As soon as the best solution is found, then it will **stop**.
 <br>
 
-- **Divide and Conquer**
+- #### Divide & Conquer
   -  It is a **very implementation of an algorithm**. It allows you to design an algorithm in a **step-by-step variation**. It allows you to break down the problem into **different methods**, and **valid output** is produced for the **valid input**. This valid output is passed to some other function.
 <br>
 
-- **Greedy algorithm**
+- #### Greedy Algorithm
   -  It is an **algorithm paradigm** that makes an optimal choice on each iteration with the hope of getting the best solution. It is **easy to implement** and has a **faster execution time**. But, there are very rare cases in which it provides the optimal solution.
 <br>
 
-- **Dynamic programming**
+- #### Dynamic programming
   -  It makes the algorithm more **efficient** by **storing the intermediate results**. It follows **five different steps** to **find the optimal solution** for the problem:
      1. It breaks down the **problem** into a **subproblem** to find the **optimal solution**.
      2. After breaking down the problem, it finds the optimal solution out of these subproblems.
@@ -319,11 +319,11 @@ in order to **solve the above problems**, **data structures are used**. Data is 
      5. Finally, it computes the result of the complex program.
 <br>
 
-- **Branch and Bound Algorithm**
+- #### Branch & Bound Algorithm
   - The **branch and bound algorithm** can be applied to **only integer programming problems**. This approach divides all the sets of feasible solutions into smaller subsets. These subsets are further evaluated to find the best solution.
 <br>
 
-- **Randomized Algorithm**
+- #### Randomized Algorithm
   - As we have seen in a **regular algorithm**, we have **predefined input and required output**. Those algorithms that have some defined set of inputs and required output, and follow some described steps are known as **deterministic algorithms**. 
 <br>
 
@@ -331,66 +331,68 @@ in order to **solve the above problems**, **data structures are used**. Data is 
     - **In a randomized algorithm**, some **random bits** are introduced by the algorithm and added in the input to produce the output, which is random in nature. Randomized algorithms are **simpler and efficient** than the **deterministic algorithm**.
 <br>
 
-- **Backtracking**
+- #### Backtracking
   - **Backtracking** is an **algorithmic technique** that solves the problem **recursively** and **removes the solution** if it does not satisfy the constraints of a problem.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="cat_algo">The major categories of Algorithms are given below:</h4>
+<h3 id="cat_algo">The major categories of Algorithms are given below:</h3>
 
-- **Sort** 
+- #### Sort 
   - Algorithm developed for sorting the items in a certain order.
-- **Search**
+- #### Search
   - Algorithm developed for searching the items inside a data structure.
-- **Delete**
+- #### Delete
   - Algorithm developed for deleting the existing element from the data structure.
-- **Insert**
+- #### Insert
   - Algorithm developed for inserting an item inside a data structure.
-- **Update**
+- #### Update
   - Algorithm developed for updating the existing element inside a data structure.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="algo_analysis">Algorithm Analysis</h4>
+<h2 id="algo_analysis">Algorithm Analysis</h2>
 
 The **algorithm** can be **analyzed** in two levels, i.e., first is **before creating the algorithm**, and second is **after creating the algorithm**. The following are the two **analysis of an algorithm**:
 
-- **Priori Analysis** 
+- ### Priori Analysis 
   - Here, **priori analysis** is the **theoretical analysis** of an algorithm which is done **before implementing the algorithm**. Various factors can be considered before implementing the algorithm like **processor speed**, which has no effect on the implementation part.
 <br>
 
-- **Posterior Analysis**
+- ### Posterior Analysis
   -  Here, **posterior analysis** is a **practical analysis** of an algorithm. The **practical analysis** is achieved by implementing the algorithm using any **programming language**. This analysis basically evaluate that **how much running time and space** taken by the algorithm.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="algo_comlexity">Algorithm Complexity</h4>
+<h2 id="algo_comlexity">Algorithm Complexity</h2>
 
-The **performance** of the **algorithm** can be measured in **two factors**:
+- The **performance** of the **algorithm** can be measured in **two factors**:
 
-1. **Time Complexity**
+### 1. Time Complexity
   - The **time complexity of an algorithm** is the ***amount of time** required to **complete the execution**. 
   <br>
+
   - The time **complexity of an algorithm** is denoted by the **big O notation**. 
     - Here, **big O notation** is the asymptotic notation to represent the **time complexity**.
   <br>
+
   - The **time complexity** is mainly calculated by **counting the number of steps** to finish the execution.
 <br>
 
-2. **Space Complexity**
+### 2. Space Complexity
   - An **algorithm's space complexity** is the **amount of space required** to solve a problem and produce an output. Similar to the **time complexity**, **space complexity** is also expressed in **big O** notation.
 
-- **Auxiliary space**
+- ### Auxiliary Space
   - The **extra space** required by the algorithm, excluding the input size, is known as an auxiliary space. The space complexity considers both the spaces, i.e., auxiliary space, and space used by the input.
 <br>
 
-- **Space complexity = Auxiliary space + Input size**
+- #### Space complexity = Auxiliary space + Input size
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h4 id="type_algo">The following are the Types of Algorithm:</h4>
+<h2 id="type_algo">The following are the Types of Algorithm:</h2>
 
-- **Search Algorithm**
+- ### Search Algorithm
   - On each day, we search for something in our day to day life. Similarly, with the case of computer, huge data is stored in a computer that whenever the user asks for any data then the computer searches for that data in the memory and provides that data to the user. There are mainly two techniques available to search the data in an array:
     1. **Linear Search**
        - Linear search is a very simple algorithm that starts searching for an element or a value from the beginning of an array until the required element is not found. It compares the element to be searched with all the elements in an array, if the match is found, then it returns the index of the element else it returns -1. This algorithm can be implemented on the unsorted list.
@@ -400,13 +402,14 @@ The **performance** of the **algorithm** can be measured in **two factors**:
        - A Binary algorithm is the simplest algorithm that searches the element very quickly. It is used to search the element from the sorted list. The elements must be stored in sequential order or the sorted manner to implement the binary algorithm. Binary search cannot be implemented if the elements are stored in a random manner. It is used to find the middle element of the list.
   <br> 
 
-- **Sort Algorithm**
+- ### Sort Algorithm
   - Sorting algorithms are used to rearrange the elements in an array or a given data structure either in an ascending or descending order. The comparison operator decides the new order of the elements.
 <br>
 
-  - Why do we need a sorting algorithm?
+  - **Why do we need a sorting algorithm?**
     -  An efficient sorting algorithm is required for optimizing the efficiency of other algorithms like binary search algorithm as a binary search algorithm requires an array to be sorted in a particular order, mainly in ascending order.
 <br>
+
     - It produces information in a sorted order, which is a human-readable format.
     - Searching a particular element in a sorted list is faster than the unsorted list.
 
