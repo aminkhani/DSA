@@ -47,6 +47,13 @@
             <li><a href="#advantage_ds">Advantages of a DS</a></li>
             <li><a href="#DS_operation">DS Operations</a></li>
             <li><a href="#Usage_of_DS">Usage of DS</a></li>
+            <li><a href="#Asymptotic_Notations">Asymptotic Notations</a>
+              <ul>
+                <li><a href="#big_o">Big O</a></li>
+                <li><a href="#omega">Omega</a></li>
+                <li><a href="#theta">Theta</a></li>
+              </ul></li>
+            <li><a href="#CommonAsymptoticNotations">Common Asymptotic Notations</a></li>
         </ul>
     </li>
     <li><a href="#start_ds">Algorithm Definition</a>
@@ -66,7 +73,7 @@
     </li>
     <li><a href="#popular_ds">Popular types of Data Structures</a>
         <ul>
-            <li><a href="#">Array</a></li>
+            <li><a href="#array">Array</a></li>
             <li><a href="#">Linked List</a></li>
             <li><a href="#">Stack</a></li>
             <li><a href="#">Queue</a></li>
@@ -199,6 +206,71 @@ in order to **solve the above problems**, **data structures are used**. Data is 
 - #### Genetics
 - #### Image Processing
 - #### Simulation etc.
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
+<h2 id="Asymptotic_Notations">Asymptotic Notations</h2>
+
+Usually, the time required by an algorithm comes under three types:
+
+  - **Worst Case**
+    - It defines the input for which the algorithm takes a huge time.
+
+  - **Average Case**
+    - It takes average time for the program execution.
+
+  - **Best Case**
+    - It defines the input for which the algorithm takes the lowest time
+
+The commonly used **asymptotic notations** used for calculating the **running time complexity** of an algorithm is given below:
+
+<span id="big_o"></span>
+
+- ### Big O Notation (O)
+  - **Big O** notation is an asymptotic notation that measures the performance of an algorithm by simply providing the order of growth of the function.
+  <br>
+
+  - This notation provides an **upper bound** on a function which ensures that the **function never grows faster than the upper bound**.
+  
+It is the formal way to **express the upper boundary** of an algorithm running time. It measures the **worst case of time complexity** or the algorithm's **longest amount of time** to complete its operation. It is represented as shown below:
+<br>
+<img src="Pic/data-structure-asymptotic-analysis.png">
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="omega"></span>
+
+- ### Omega Notation (Ω)
+  - It basically describes the **best-case scenario** which is opposite to the **big o notation**.
+<br>
+
+  - It is the formal way to represent the **lower bound** of an algorithm's running time. It measures the **best amount of time** an algorithm can possibly take to complete or the best-case time complexity.
+<br>
+
+  - It determines what is the **fastest time** that an algorithm can run.
+
+<span id="theta"></span>
+
+- ### Theta Notation (θ)
+  - The theta notation mainly describes the **average case scenarios**.
+  <br>
+
+  - It represents the **realistic time complexity** of an algorithm. Every time, an algorithm does not perform **worst or best**, in real-world problems, algorithms mainly **fluctuate** between the **worst-case and best-case**, and this gives us the average case of the algorithm.
+  <br>
+
+  - **Big theta** is mainly used when the value of worst-case and the best-case is same.
+  <br>
+
+  - It is the formal way to express **both** the **upper bound** and **lower bound** of an algorithm running time.
+
+<h2 id="CommonAsymptoticNotations">Common Asymptotic Notations</h2>
+
+- #### constant : Ο(1)
+- #### logarithmic	: Ο(log n)
+- #### linear : Ο(n)
+- #### n log n : Ο(n log n)
+- #### quadratic : Ο(n<sup>2</sup>)
+- #### cubic : Ο(n<sup>3</sup>)
+- #### polynomial : n<sup>Ο(1)<sup>
+- #### exponential	: 2<sup>Ο(n)<sup>
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
@@ -413,5 +485,46 @@ The **performance** of the **algorithm** can be measured in **two factors**:
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 <h1 id="popular_ds">Popular Types of Data Structures</h1>
+
+<ul>
+  <li><h2 id="array">Array</h2>
+    <ul>
+      <li>Arrays are defined as the collection of similar or different  types of data items stored at contiguous memory locations.</li><br>
+      <li> It is one of the simplest data structures where each data element can be randomly accessed by using its index number.</li>
+      <li><h3>Properties of Array</h3>
+        <ul>
+          <li>Each element in an array is of the same data type and carries the same size that is 4 bytes.</li><br>
+          <li>Elements in the array are stored at contiguous memory locations from which the first element is stored at the smallest memory location.</li><br>
+          <li>Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.</li><br>
+        </ul>
+      </li>
+      <li><h3>Representation of an Array</h3>
+        <ul>
+          <img src="Pic/ds-array.png"><br>
+          <li>Index starts with 0.</li>
+          <li>The array's length is 10, which means we can store 10 elements.</li>
+          <li>Each element in the array can be accessed via its index.</li>
+        </ul>
+      </li>
+      <li><h3>Why are Arrays Required?</h3>
+        <ul>
+          <li>Sorting and searching a value in an array is easier.</li><br>
+          <li>Arrays are best to process multiple values quickly and easily.</li><br>
+          <li>Arrays are good for storing multiple values in a single variable - In computer programming, most cases require storing a large number of data of a similar type. To store such an amount of data, we need to define a large number of variables. It would be very difficult to remember the names of all the variables while writing the programs. Instead of naming all the variables with a different name, it is better to define an array and store all the elements into it.</li>
+        </ul>
+      </li>
+      <li><h3>Memory Allocation of an Array</h3></li>
+      <li><h3>Advantages of Array</h3></li>
+      <li><h3>Disadvantages of Array</h3></li>
+    </ul>
+  </li>
+
+
+</ul>
+
+
+
+
+
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
