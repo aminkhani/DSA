@@ -43,10 +43,10 @@
     <li><a href="#ds_start">Data Structure Definition</a>
         <ul>
             <li><a href="#type_ds">Types of DS</a></li>
-            <li><a href="#DS_operation">DS Operations</a></li>
-            <li><a href="#Usage_of_DS">Usage_of_DS</a></li>
-            <li><a href="#advantage_ds">Advantages of a DS</a></li>
             <li><a href="#need_ds">Need of DS</a></li>
+            <li><a href="#advantage_ds">Advantages of a DS</a></li>
+            <li><a href="#DS_operation">DS Operations</a></li>
+            <li><a href="#Usage_of_DS">Usage of DS</a></li>
         </ul>
     </li>
     <li><a href="#start_ds">Algorithm Definition</a>
@@ -91,7 +91,7 @@
 - **Data Structure** is a **storage** that is used to **store** and **organize data**. It is a way of **arranging data** on a computer so that it can be **accessed** and **updated efficiently**.
 <br>
 
-- **Data Structure** is not only used for organizing the data. It is also used for **processing**, **retrieving**, and **storing data**. There are different basic and advanced types of data structures that are used in almost every program or software system that has been developed. So we must have good knowledge about data structures
+- **Data Structure** is not only used for organizing the data. It is also used for **processing**, **retrieving**, and **storing data**. There are different basic and advanced types of data structures that are used in almost every program or software system that has been developed. So we must have good knowledge about data structures.
 <br>
 
 - The choice of a **good data structure** makes it possible to perform a variety of critical operations effectively. An **efficient data structure** also uses **minimum memory space and execution time** to process the structure.
@@ -104,7 +104,7 @@
   - An **ADT** tells **what** is to be done and **data structure** tells **how** it is to be done. In other words, we can say that **ADT** gives us the **blueprint** while **data structure** provides the **implementation** part.
 <br>
 
-- As the different data structures can be implemented in a particular ADT, but the different implementations are compared for time and space.
+- As the different data structures can be implemented in a particular ADT, but the different implementations are compared for **time and space**.
   - For example, the **Stack ADT** can be implemented by both **Arrays** and **linked list**. Suppose the **array** is **providing time efficiency** while the **linked list** is **providing space efficiency**, so the one which is the best suited for the current user's requirements will be selected.
 
 
@@ -126,20 +126,16 @@
   - Data structure in which data elements are **arranged sequentially** or **linearly**, where each element is attached to its previous and next adjacent elements, is called a **linear data structure**.
   <br />
 
-  - Examples of **linear data structures** are **Array**, **Stack**, **Queue**, **Linked List**, etc.
+  - Examples of **linear data structures** are **[Array]()**, **[Stack]()**, **[Queue]()**, **[Linked List]()**, etc.
     <br />
 
   - #### Static Data Structure
     - **Static data structure** has a **fixed memory size**. It is **easier to access the elements** in a **static data structure**. 
-  <br>
-
     - An example of this **data structure** is an **Array**.
     <br>
 
   - #### Dynamic Data Structure
     - In **dynamic data structure**, the size is **not fixed**. It can be randomly updated during the runtime which may be considered efficient concerning the memory (space) complexity of the code. 
-  <br>
-
     - Examples of this **data structure** are **Queue**, **Stack**, **Linked List** etc.
 
 
@@ -147,7 +143,7 @@
   - **Data structures** where data elements are **not placed sequentially** or **linearly** are called **non-linear data structures**. In a **non-linear data structure**, we can’t traverse all the elements in a single run only. 
   <br>
 
-  - Examples of **non-linear data structures** are **Trees** and **Graphs**.
+  - Examples of **non-linear data structures** are **[Trees]()** and **[Graphs]()**.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
@@ -212,6 +208,8 @@ in order to **solve the above problems**, **data structures are used**. Data is 
 <br>
 
 - The **formal definition of an algorithm** is that it contains the **finite set of instructions** which are being carried in a **specific order** to perform the specific task. It is **not the complete program** or **code**; it is **just a solution (logic) of a problem**, which can be represented either as an informal description using a **Flowchart** or **Pseudocode**.
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 <h3 id="char_algorithm">The following are the Characteristics of an Algorithm:</h3>
 
@@ -292,7 +290,7 @@ in order to **solve the above problems**, **data structures are used**. Data is 
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id=="appro_algo">The following are the approaches used after considering both the theoretical and practical importance of designing an algorithm:</h3>
+<h3 id="appro_algo">The following are the approaches used after considering both the theoretical and practical importance of designing an algorithm:</h3>
 
 - #### Brute force algorithm 
   - The **general logic structure** is applied to **design an algorithm**. It is also known as an **exhaustive search algorithm** that searches all the **possibilities** to provide the required solution. Such algorithms are of two types:
@@ -327,7 +325,7 @@ in order to **solve the above problems**, **data structures are used**. Data is 
   - As we have seen in a **regular algorithm**, we have **predefined input and required output**. Those algorithms that have some defined set of inputs and required output, and follow some described steps are known as **deterministic algorithms**. 
 <br>
 
-  - What happens that when the **random variable** is introduced in the **randomized algorithm**?. 
+  - What happens that when the **random variable** is introduced in the **randomized algorithm**?
     - **In a randomized algorithm**, some **random bits** are introduced by the algorithm and added in the input to produce the output, which is random in nature. Randomized algorithms are **simpler and efficient** than the **deterministic algorithm**.
 <br>
 
@@ -366,10 +364,10 @@ The **algorithm** can be **analyzed** in two levels, i.e., first is **before cre
 
 <h2 id="algo_comlexity">Algorithm Complexity</h2>
 
-- The **performance** of the **algorithm** can be measured in **two factors**:
+The **performance** of the **algorithm** can be measured in **two factors**:
 
 ### 1. Time Complexity
-  - The **time complexity of an algorithm** is the ***amount of time** required to **complete the execution**. 
+  - The **time complexity of an algorithm** is the **amount of time** required to **complete the execution**. 
   <br>
 
   - The time **complexity of an algorithm** is denoted by the **big O notation**. 
@@ -382,11 +380,11 @@ The **algorithm** can be **analyzed** in two levels, i.e., first is **before cre
 ### 2. Space Complexity
   - An **algorithm's space complexity** is the **amount of space required** to solve a problem and produce an output. Similar to the **time complexity**, **space complexity** is also expressed in **big O** notation.
 
-- ### Auxiliary Space
+### Auxiliary Space
   - The **extra space** required by the algorithm, excluding the input size, is known as an auxiliary space. The space complexity considers both the spaces, i.e., auxiliary space, and space used by the input.
 <br>
 
-- #### Space complexity = Auxiliary space + Input size
+#### Space complexity = Auxiliary space + Input size
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
@@ -409,7 +407,6 @@ The **algorithm** can be **analyzed** in two levels, i.e., first is **before cre
   - **Why do we need a sorting algorithm?**
     -  An efficient sorting algorithm is required for optimizing the efficiency of other algorithms like binary search algorithm as a binary search algorithm requires an array to be sorted in a particular order, mainly in ascending order.
 <br>
-
     - It produces information in a sorted order, which is a human-readable format.
     - Searching a particular element in a sorted list is faster than the unsorted list.
 
