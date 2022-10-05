@@ -572,62 +572,62 @@ The **performance** of the **algorithm** can be measured in **two factors**:
     <span id="binary_search"></span>
 
     #### 2. Binary Search
-     - A Binary algorithm is the simplest algorithm that searches the element very quickly. It is used to search the element from the sorted list. The elements must be stored in sequential order or the sorted manner to implement the binary algorithm. Binary search cannot be implemented if the elements are stored in a random manner. It is used to find the middle element of the list.
+      - A Binary algorithm is the simplest algorithm that searches the element very quickly. It is used to search the element from the sorted list. The elements must be stored in sequential order or the sorted manner to implement the binary algorithm. Binary search cannot be implemented if the elements are stored in a random manner. It is used to find the middle element of the list.
       <br>
       <img src="Pic/BinarySearch.png">
       <br>
 
-        ```C++  
-          // Iteration Method
+      ```C++  
+        // Iteration Method
+        // Array arr[low...high] is sorted
+        int binarySearch(int arr[], int low, int high, int x)
+        {
+            while (low <= high) {
+                int mid = (high - low) / 2;
+                // Check if x is present at mid
+                if (arr[mid] == x)
+                    return mid;
+                // If x greater, ignore left half
+                if (arr[mid] < x)
+                    low = mid + 1;
+                // If x is smaller, ignore right half
+                else
+                    high = mid - 1;
+            }
+            // if we reach here, then element was
+            // not present
+            return -1;
+        }
+      ``` 
+      <br>
+
+      - **Time Complexity**: **$O(log n)$**
+      <br> 
+
+      ```C++
+          // Recursive Method
           // Array arr[low...high] is sorted
           int binarySearch(int arr[], int low, int high, int x)
           {
-              while (low <= high) {
+              if (high >= low) {
                   int mid = (high - low) / 2;
-                  // Check if x is present at mid
+                  // If the element is present at the middle itself
                   if (arr[mid] == x)
                       return mid;
-                  // If x greater, ignore left half
-                  if (arr[mid] < x)
-                      low = mid + 1;
-                  // If x is smaller, ignore right half
-                  else
-                      high = mid - 1;
+                  // If element is smaller than mid, then it can only be present in left subarray
+                  if (arr[mid] > x)
+                      return binarySearch(arr, low, mid - 1, x);
+                  // Else the element can only be present in right subarray
+                  return binarySearch(arr, mid + 1, high, x);
               }
-              // if we reach here, then element was
-              // not present
+              // We reach here when element is not present in array
               return -1;
           }
-        ``` 
-        <br>
+      ```
+      <br>
 
-        - **Time Complexity**: **$O(log n)$**
-        <br> 
-
-        ```C++
-            // Recursive Method
-            // Array arr[low...high] is sorted
-            int binarySearch(int arr[], int low, int high, int x)
-            {
-                if (high >= low) {
-                    int mid = (high - low) / 2;
-                    // If the element is present at the middle itself
-                    if (arr[mid] == x)
-                        return mid;
-                    // If element is smaller than mid, then it can only be present in left subarray
-                    if (arr[mid] > x)
-                        return binarySearch(arr, low, mid - 1, x);
-                    // Else the element can only be present in right subarray
-                    return binarySearch(arr, mid + 1, high, x);
-                }
-                // We reach here when element is not present in array
-                return -1;
-            }
-        ```
-        <br>
-
-        - **Time Complexity**: **$O(log n)$**
-  <br> 
+      - **Time Complexity**: **$O(log n)$**
+      <br> 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="Sort_Algo"></span>
 
