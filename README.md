@@ -56,21 +56,6 @@
             <li><a href="#CommonAsymptoticNotations">Common Asymptotic Notations</a></li>
         </ul>
     </li>
-    <li><a href="#start_ds">Algorithm Definition</a>
-        <ul>
-            <li><a href="#char_algorithm">Characteristics of an Algorithm</a></li>
-            <li><a href="#dataflow">Dataflow of an Algorithm</a></li>
-            <li><a href="#need_algo">Need of Algorithms</a></li>
-            <li><a href="#algo_factors">Factors of an Algorithm</a></li>
-            <li><a href="#importance_algo">Importance of Algorithms</a></li>
-            <li><a href="#issues_algo">Issues of Algorithms</a></li>
-            <li><a href="#appro_algo">Approaches of Algorithm</a></li>
-            <li><a href="#cat_algo">Categories of Algorithms</a></li>
-            <li><a href="#algo_analysis">Algorithm Analysis</a></li>
-            <li><a href="#algo_comlexity">Algorithm Complexity</a></li>
-            <li><a href="#type_algo">Types of Algorithms</a></li>
-        </ul>
-    </li>
     <li><a href="#popular_ds">Popular types of Data Structures</a>
         <ul>
             <li><a href="#array">Array</a></li>
@@ -85,6 +70,37 @@
             <li><a href="#">Matrix</a></li>
             <li><a href="#">Misc</a></li>
             <li><a href="#">Advanced Data Structure</a></li>
+        </ul>
+    </li>
+    <li><a href="#start_ds">Algorithm Definition</a>
+        <ul>
+            <li><a href="#char_algorithm">Characteristics of an Algorithm</a></li>
+            <li><a href="#dataflow">Dataflow of an Algorithm</a></li>
+            <li><a href="#need_algo">Need of Algorithms</a></li>
+            <li><a href="#algo_factors">Factors of an Algorithm</a></li>
+            <li><a href="#importance_algo">Importance of Algorithms</a></li>
+            <li><a href="#issues_algo">Issues of Algorithms</a></li>
+            <li><a href="#appro_algo">Approaches of Algorithm</a></li>
+            <li><a href="#cat_algo">Categories of Algorithms</a></li>
+            <li><a href="#algo_analysis">Algorithm Analysis</a></li>
+            <li><a href="#algo_comlexity">Algorithm Complexity</a></li>
+            <li><a href="#type_algo">Types of Algorithms</a>
+                <ul>
+                    <li><a href="#Search_Algo">Search Algorithm</a>
+                        <ul>
+                            <li><a href="#linear_search">Linear Search</a></li>
+                            <li><a href="#binary_search">Binary Search</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Sort_Algo">Sort Algorithm</a>
+                        <ul>
+                            <li><a href="#bubble">Bubble Sort</a></li>
+                            <li><a href="#merge">Merge Sort</a></li>
+                            <!--<li><a href="#"></a></li>-->
+                        </ul>
+                    </li>
+                <ul>
+            </li>
         </ul>
     </li>
 </ul>
@@ -274,6 +290,46 @@ It is the formal way to **express the upper boundary** of an algorithm running t
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
+<h1 id="popular_ds">Popular Types of Data Structures</h1>
+
+<ul>
+  <li><h2 id="array">Array</h2>
+    <ul>
+      <li>Arrays are defined as the collection of similar or different  types of data items stored at contiguous memory locations.</li><br>
+      <li> It is one of the simplest data structures where each data element can be randomly accessed by using its index number.</li>
+      <li><h3>Properties of Array</h3>
+        <ul>
+          <li>Each element in an array is of the same data type and carries the same size that is 4 bytes.</li><br>
+          <li>Elements in the array are stored at contiguous memory locations from which the first element is stored at the smallest memory location.</li><br>
+          <li>Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.</li><br>
+        </ul>
+      </li>
+      <li><h3>Representation of an Array</h3>
+        <ul>
+          <img src="Pic/ds-array.png"><br>
+          <li>Index starts with 0.</li>
+          <li>The array's length is 10, which means we can store 10 elements.</li>
+          <li>Each element in the array can be accessed via its index.</li>
+        </ul>
+      </li>
+      <li><h3>Why are Arrays Required?</h3>
+        <ul>
+          <li>Sorting and searching a value in an array is easier.</li><br>
+          <li>Arrays are best to process multiple values quickly and easily.</li><br>
+          <li>Arrays are good for storing multiple values in a single variable - In computer programming, most cases require storing a large number of data of a similar type. To store such an amount of data, we need to define a large number of variables. It would be very difficult to remember the names of all the variables while writing the programs. Instead of naming all the variables with a different name, it is better to define an array and store all the elements into it.</li>
+        </ul>
+      </li>
+      <li><h3>Memory Allocation of an Array</h3></li>
+      <li><h3>Advantages of Array</h3></li>
+      <li><h3>Disadvantages of Array</h3></li>
+    </ul>
+  </li>
+
+
+</ul>
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+
 <h1 id="start_ds">What is an Algorithm?</h1>
 
 - **Algorithm** is a **process** or a **set of rules** required to perform calculations or some other problem-solving operations especially by a **computer**. 
@@ -460,71 +516,235 @@ The **performance** of the **algorithm** can be measured in **two factors**:
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h2 id="type_algo">The following are the Types of Algorithm:</h2>
+<h1 id="type_algo">Types of Algorithm:</h1>
+<span id="Search_Algo"></span>
 
-- ### Search Algorithm
+- ## Search Algorithm
   - On each day, we search for something in our day to day life. Similarly, with the case of computer, huge data is stored in a computer that whenever the user asks for any data then the computer searches for that data in the memory and provides that data to the user. There are mainly two techniques available to search the data in an array:
-    1. **Linear Search**
-       - Linear search is a very simple algorithm that starts searching for an element or a value from the beginning of an array until the required element is not found. It compares the element to be searched with all the elements in an array, if the match is found, then it returns the index of the element else it returns -1. This algorithm can be implemented on the unsorted list.
-  <br>
+    <span id="linear_search"></span>
 
-    2. **Binary Search**
-       - A Binary algorithm is the simplest algorithm that searches the element very quickly. It is used to search the element from the sorted list. The elements must be stored in sequential order or the sorted manner to implement the binary algorithm. Binary search cannot be implemented if the elements are stored in a random manner. It is used to find the middle element of the list.
+    #### 1. Linear Search
+      - Linear search is a very simple algorithm that starts searching for an element or a value from the beginning of an array until the required element is not found. It compares the element to be searched with all the elements in an array, if the match is found, then it returns the index of the element else it returns -1. This algorithm can be implemented on the unsorted list.
+      <br> 
+      <img src="Pic/Linear-Search.png">
+      <br>    
+
+        ```C++
+        // Array Name: arr
+        // Array Size: N
+        // Element to be searched: x
+        int search(int arr[], int N, int x)
+        {
+            int i;
+            for (i = 0; i < N; i++)
+                if (arr[i] == x)
+                    return i;
+            return -1;
+        }
+        ```
+        <br>
+
+        - **Time Complexity:** **$O(n)$**
+        <br>
+
+        ```C++
+        // Linear Search Recursive Approach
+        int search(int arr[], int N, int x)
+        {
+            if (N == 0) {
+                return -1;
+            }
+            else if (arr[N - 1] == x) {
+                // Return the index of found x.
+                return N - 1;
+            }
+            else {
+                int ans = search(arr, N - 1, x);
+                return ans;
+            }
+        }
+        ``` 
+        <br>
+
+        - **Time Complexity:** **$O(n)$**
+         
+    <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>    
+    <span id="binary_search"></span>
+
+    #### 2. Binary Search
+     - A Binary algorithm is the simplest algorithm that searches the element very quickly. It is used to search the element from the sorted list. The elements must be stored in sequential order or the sorted manner to implement the binary algorithm. Binary search cannot be implemented if the elements are stored in a random manner. It is used to find the middle element of the list.
+      <br>
+      <img src="Pic/BinarySearch.png">
+      <br>
+
+        ```C++  
+            // Iteration Method
+            // Array arr[low...high] is sorted
+        int binarySearch(int arr[], int low, int high, int x)
+            {
+                while (low <= high) {
+                    int mid = (high - low) / 2;
+                    // Check if x is present at mid
+                    if (arr[mid] == x)
+                        return mid;
+                    // If x greater, ignore left half
+                    if (arr[mid] < x)
+                        low = mid + 1;
+                    // If x is smaller, ignore right half
+                    else
+                        high = mid - 1;
+                }
+                // if we reach here, then element was
+                // not present
+                return -1;
+            }
+        ``` 
+        <br>
+
+        - **Time Complexity**: **$O(log n)$**
+        <br> 
+
+        ```C++
+            // Recursive Method
+            // Array arr[low...high] is sorted
+            int binarySearch(int arr[], int low, int high, int x)
+            {
+                if (high >= low) {
+                    int mid = (high - low) / 2;
+                    // If the element is present at the middle itself
+                    if (arr[mid] == x)
+                        return mid;
+                    // If element is smaller than mid, then it can only be present in left subarray
+                    if (arr[mid] > x)
+                        return binarySearch(arr, low, mid - 1, x);
+                    // Else the element can only be present in right subarray
+                    return binarySearch(arr, mid + 1, high, x);
+                }
+                // We reach here when element is not present in array
+                return -1;
+            }
+        ```
+        <br>
+
+        - **Time Complexity**: **$O(log n)$**
   <br> 
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="Sort_Algo"></span>
 
-- ### Sort Algorithm
+- ## Sort Algorithm
   - Sorting algorithms are used to rearrange the elements in an array or a given data structure either in an ascending or descending order. The comparison operator decides the new order of the elements.
-<br>
+    <br>
 
   - **Why do we need a sorting algorithm?**
     -  An efficient sorting algorithm is required for optimizing the efficiency of other algorithms like binary search algorithm as a binary search algorithm requires an array to be sorted in a particular order, mainly in ascending order.
-<br>
     - It produces information in a sorted order, which is a human-readable format.
     - Searching a particular element in a sorted list is faster than the unsorted list.
+    - 
+    <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+    <span id="bubble"></span>
 
-<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+    - ### Bubble Sort
+        - Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+        <br>
+        <img src="Pic/bubble-short.png">
+        <br>
+        ```C++
+        // Bubble Sort
+        void bubbleSort(int arr[], int n)
+        {
+            int i, j;
+            for (i = 0; i < n - 1; i++)
+                // Last i elements are already in place
+                for (j = 0; j < n - i - 1; j++)
+                    if (arr[j] > arr[j + 1])
+                        swap(&arr[j], &arr[j + 1]);
+        }
+        ```
+        ```C++
+        // Bubble Sort Recursive Approach
+        void bubbleSort(int arr[], int n)
+        {
+            // Base case
+            if (n == 1 || n == 0)
+                return;
+            // One pass of bubble sort. After
+            // this pass, the largest element
+            // is moved (or bubbled) to end.
+            for (int i = 0; i < n - 1; i++)
+                if (arr[i] > arr[i + 1])
+                    swap(&arr[i], &arr[i + 1]);
+            // Largest element is fixed,
+            // recur for remaining array
+            bubbleSort(arr, n - 1);
+        }
+        ```
+        - **Time Complexity**
+          - Best Case: **$O(n)$**
+          - Average Case: **$O(n^2)$**
+          - Worst Case: **$O(n^2)$**
 
-<h1 id="popular_ds">Popular Types of Data Structures</h1>
+    <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+    <span id="merge"></span>
 
-<ul>
-  <li><h2 id="array">Array</h2>
-    <ul>
-      <li>Arrays are defined as the collection of similar or different  types of data items stored at contiguous memory locations.</li><br>
-      <li> It is one of the simplest data structures where each data element can be randomly accessed by using its index number.</li>
-      <li><h3>Properties of Array</h3>
-        <ul>
-          <li>Each element in an array is of the same data type and carries the same size that is 4 bytes.</li><br>
-          <li>Elements in the array are stored at contiguous memory locations from which the first element is stored at the smallest memory location.</li><br>
-          <li>Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.</li><br>
-        </ul>
-      </li>
-      <li><h3>Representation of an Array</h3>
-        <ul>
-          <img src="Pic/ds-array.png"><br>
-          <li>Index starts with 0.</li>
-          <li>The array's length is 10, which means we can store 10 elements.</li>
-          <li>Each element in the array can be accessed via its index.</li>
-        </ul>
-      </li>
-      <li><h3>Why are Arrays Required?</h3>
-        <ul>
-          <li>Sorting and searching a value in an array is easier.</li><br>
-          <li>Arrays are best to process multiple values quickly and easily.</li><br>
-          <li>Arrays are good for storing multiple values in a single variable - In computer programming, most cases require storing a large number of data of a similar type. To store such an amount of data, we need to define a large number of variables. It would be very difficult to remember the names of all the variables while writing the programs. Instead of naming all the variables with a different name, it is better to define an array and store all the elements into it.</li>
-        </ul>
-      </li>
-      <li><h3>Memory Allocation of an Array</h3></li>
-      <li><h3>Advantages of Array</h3></li>
-      <li><h3>Disadvantages of Array</h3></li>
-    </ul>
-  </li>
+    - ### Merge Sort
+        - Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
+        <br>
+        <img src="Pic/MergeSortTutorial.png">
+        <br>
 
-
-</ul>
-
-
-
-
+        ```C++
+        // Merge Sort
+        void merge(int arr[], int l, int m, int r)
+        {
+            int i, j, k;
+            int n1 = m - l + 1;
+            int n2 = r - m;
+            // create temp arrays
+            int L[n1], R[n2];
+            // Copy data to temp arrays L[] and R[]
+            for (i = 0; i < n1; i++)
+                L[i] = arr[l + i];
+            for (j = 0; j < n2; j++)
+                R[j] = arr[m + 1 + j];
+            // Merge the temp arrays back into arr[l..r]
+            i = 0; // Initial index of first subarray
+            j = 0; // Initial index of second subarray
+            k = l; // Initial index of merged subarray
+            while (i < n1 && j < n2) {
+                if (L[i] <= R[j]) {
+                    arr[k] = L[i];
+                    i++;
+                }
+                else {
+                    arr[k] = R[j];
+                    j++;
+                }
+                k++;
+            }
+            // Copy the remaining elements of L[], if there are any
+            while (i < n1) {
+                arr[k] = L[i];
+                i++;
+                k++;
+            }
+            // Copy the remaining elements of R[], if there are any
+            while (j < n2) {
+                arr[k] = R[j];
+                j++;
+                k++;
+            }
+        }
+        // l is for left index and r is right index of the sub-array of arr to be sorted
+        void mergeSort(int arr[], int l, int r)
+        {
+            if (l < r) {
+                // Same as (l+r)/2, but avoids overflow for
+        ```
+        
+        - **Time Complexity**
+          - Best Case: **$O(nlogn)$**
+          - Average Case: **$O(nlogn)$**
+          - Worst Case: **$O(nlogn)$**
 
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
