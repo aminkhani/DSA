@@ -99,7 +99,7 @@
                             <!--<li><a href="#"></a></li>-->
                         </ul>
                     </li>
-                <ul>
+                </ul>
             </li>
         </ul>
     </li>
@@ -133,17 +133,17 @@
 
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
-<h2 id="type_ds">Types of Data Structures</h2>
+<h1 id="type_ds">Types of Data Structures</h1>
 
-- ### Primitive Data Structure
+### 1. Primitive Data Structure
   - The **primitive data structures** are **primitive data types**. The **int**, **char**, **float**, **double**, and **pointer** are the primitive data structures that can **hold a single value**.
-- ### Non-primitive Data Structure
+### 2. Non-primitive Data Structure
   - Linear Data Structure
   - Non-linear Data Structure
 
 <img src="Pic/ds.png">
 
-## Classification of Non-Primitive Data Structure: 
+### Classification of Non-Primitive Data Structure: 
 
 - ### Linear Data Structure
   - Data structure in which data elements are **arranged sequentially** or **linearly**, where each element is attached to its previous and next adjacent elements, is called a **linear data structure**.
@@ -170,7 +170,7 @@
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h2 id="need_ds">Need of Data Structures</h2>
+<h1 id="need_ds">Need of Data Structures</h1>
 
 As applications are getting **complexed** and **amount of data is increasing day by day**, there may arrise the following problems:
 
@@ -187,56 +187,55 @@ in order to **solve the above problems**, **data structures are used**. Data is 
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id="advantage_ds">The following are the advantages of a Data Structure:</h3>
+<h1 id="advantage_ds">Advantages of a Data Structure</h1>
 
-- #### Efficiency
+- ### Efficiency
   -  If the choice of a data structure for implementing a particular ADT is proper, it makes the program very efficient in terms of time and space.
-- #### Reusability
+- ### Reusability
   -  The data structure provides reusability means that multiple client programs can use the data structure.
-- #### Abstraction
+- ### Abstraction
   -  The data structure specified by an ADT also provides the level of abstraction. The client cannot see the internal working of the data structure, so it does not have to worry about the implementation part. The client can only see the interface.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id ="DS_operation">Common operations that can be performed on the Data Structures are:</h3>
+<h1 id ="DS_operation">Common operations on Data Structures</h1>
 
-- #### Searching 
+- ### Searching 
   - We can search for any element in a data structure.
-- #### Sorting 
+- ### Sorting 
   - We can sort the elements of a data structure either in an ascending or descending order.
-- #### Insertion
+- ### Insertion
   -  We can also insert the new element in a data structure.
-- #### Updation
+- ### Updation
   -  We can also update the element, i.e., we can replace the element with another element.
-- #### Deletion 
+- ### Deletion 
   - We can also perform the delete operation to remove the element from the data structure.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id="Usage_of_DS">Data Structures are used in various fields such as:</h3>
+<h2 id="Usage_of_DS">Data Structures are used in various fields such as:</h2>
 
-- #### Operating system
-- #### Graphics
-- #### Computer Design
-- #### Blockchain
-- #### Genetics
-- #### Image Processing
-- #### Simulation etc.
+- ### Operating system
+- ### Graphics
+- ### Computer Design
+- ### Blockchain
+- ### Genetics
+- ### Image Processing
+- ### Simulation etc.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h2 id="Asymptotic_Notations">Asymptotic Notations</h2>
+<h1 id="Asymptotic_Notations">Asymptotic Notations</h1>
 
 Usually, the time required by an algorithm comes under three types:
+### 1. Worst Case
+  - It defines the input for which the algorithm takes a huge time.
 
-  - **Worst Case**
-    - It defines the input for which the algorithm takes a huge time.
+### 2. Average Case
+  - It takes average time for the program execution.
 
-  - **Average Case**
-    - It takes average time for the program execution.
-
-  - **Best Case**
-    - It defines the input for which the algorithm takes the lowest time
+### 3. Best Case
+  - It defines the input for which the algorithm takes the lowest time
 
 The commonly used **asymptotic notations** used for calculating the **running time complexity** of an algorithm is given below:
 
@@ -339,64 +338,64 @@ It is the formal way to **express the upper boundary** of an algorithm running t
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id="char_algorithm">The following are the Characteristics of an Algorithm:</h3>
+<h2 id="char_algorithm">Characteristics of an Algorithm</h2>
 
-- #### Input
+- ### Input
   - An algorithm has some input values. We can pass 0 or some input value to an algorithm.
-- #### Output
+- ### Output
   - We will get 1 or more output at the end of an algorithm.
-- #### Unambiguity
+- ### Unambiguity
   - An algorithm should be unambiguous which means that the instructions in an algorithm should be **clear and simple**.
-- #### Finiteness
+- ### Finiteness
   - An algorithm should have finiteness. Here, finiteness means that the algorithm should contain a limited number of instructions, i.e., the instructions should be **countable**.
-- #### Effectiveness
+- ### Effectiveness
   - An algorithm should be effective as each instruction in an algorithm affects the overall process.
-- #### Language independent
+- ### Language independent
   - An algorithm must be language-independent so that the instructions in an algorithm can be implemented in **any of the languages** with the same output.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h2 id="dataflow">Dataflow of an Algorithm</h2>
+<h1 id="dataflow">Dataflow of an Algorithm</h1>
 
-- #### Problem
+- ### Problem
   - A problem can be a real-world problem or any instance from the real-world problem for which we need to create a program or the set of instructions. The set of instructions is known as an algorithm.
-- #### Algorithm
+- ### Algorithm
   - An algorithm will be designed for a problem which is a step by step procedure.
-- #### Input
+- ### Input
   - After designing an algorithm, the required and the desired inputs are provided to the algorithm.
-- #### Processing Unit
+- ### Processing Unit
   - The input will be given to the processing unit, and the processing unit will produce the desired output.
-- #### Output
+- ### Output
   - The output is the outcome or the result of the program.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id="need_algo">We need Algorithms because of the following reasons:</h3>
+<h2 id="need_algo">We need Algorithms because of the following reasons:</h2>
 
-- #### Scalability
+- ### Scalability
   - It helps us to understand the scalability. When we have a big real-world problem, we need to scale it down into **small-small steps** to **easily analyze** the problem.
-- #### Performance
-  -  The real-world is not easily broken down into smaller steps. If the problem can be easily broken into smaller steps means that the problem is feasible.
+- ### Performance
+  - The real-world is not easily broken down into smaller steps. If the problem can be easily broken into smaller steps means that the problem is feasible.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id="algo_factors">The following are the factors that we need to consider for Designing an Algorithm:</h3>
+<h2 id="algo_factors">Factors for Designing an Algorithm</h2>
 
-- #### Modularity
+- ### Modularity
   -  If any problem is given and we can break that problem into **small-small modules** or **small-small steps**, which is a basic definition of an algorithm, it means that this feature has been perfectly designed for the algorithm.
-- #### Correctness 
+- ### Correctness 
   - The correctness of an algorithm is defined as when the **given inputs produce the desired output**, which means that the algorithm has been designed algorithm. The analysis of an algorithm has been done correctly.
-- #### Maintainability
+- ### Maintainability
   - Here, maintainability means that the algorithm should be designed in a **very simple structured** way so that when we **redefine** the algorithm, **no major change will be done** in the algorithm.
-- #### Functionality
+- ### Functionality
   - It considers **various logical steps** to solve the real-world problem.
-- #### Robustness
+- ### Robustness
   - Robustness means that how an algorithm can **clearly define our problem**.
-- #### User-friendly
+- ### User-friendly
   - If the algorithm is not user-friendly, then the designer will not be able to explain it to the programmer.
-- #### Simplicity 
+- ### Simplicity 
   - If the algorithm is **simple** then it is **easy to understand**.
-- #### Extensibility
+- ### Extensibility
   - If any other algorithm designer or programmer wants to use your algorithm then it should be extensible.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
@@ -410,17 +409,17 @@ It is the formal way to **express the upper boundary** of an algorithm running t
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id="issues_algo">The following are the issues that come while Designing an Algorithm:</h3>
+<h2 id="issues_algo">Issues for Designing an Algorithm:</h2>
 
-- #### How to design algorithms
+- ### How to design algorithms
   -  As we know that an algorithm is a step-by-step procedure so we must follow some steps to design an algorithm.
-- #### How to analyze algorithm efficiency
+- ### How to analyze algorithm efficiency
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id="appro_algo">The following are the approaches used after considering both the theoretical and practical importance of designing an algorithm:</h3>
+<h1 id="appro_algo">Approaches for Designing an Algorithm</h1>
 
-- #### Brute force algorithm 
+- ### Brute force algorithm 
   - The **general logic structure** is applied to **design an algorithm**. It is also known as an **exhaustive search algorithm** that searches all the **possibilities** to provide the required solution. Such algorithms are of two types:
     - **Optimizing**
       - Finding **all the solutions of a problem** and then take out the **best solution** or if the value of the best solution is known then it will terminate if the best solution is known.
@@ -428,15 +427,15 @@ It is the formal way to **express the upper boundary** of an algorithm running t
       -  As soon as the best solution is found, then it will **stop**.
 <br>
 
-- #### Divide & Conquer
+- ### Divide & Conquer
   -  It is a **very implementation of an algorithm**. It allows you to design an algorithm in a **step-by-step variation**. It allows you to break down the problem into **different methods**, and **valid output** is produced for the **valid input**. This valid output is passed to some other function.
 <br>
 
-- #### Greedy Algorithm
+- ### Greedy Algorithm
   -  It is an **algorithm paradigm** that makes an optimal choice on each iteration with the hope of getting the best solution. It is **easy to implement** and has a **faster execution time**. But, there are very rare cases in which it provides the optimal solution.
 <br>
 
-- #### Dynamic programming
+- ### Dynamic programming
   -  It makes the algorithm more **efficient** by **storing the intermediate results**. It follows **five different steps** to **find the optimal solution** for the problem:
      1. It breaks down the **problem** into a **subproblem** to find the **optimal solution**.
      2. After breaking down the problem, it finds the optimal solution out of these subproblems.
@@ -445,11 +444,11 @@ It is the formal way to **express the upper boundary** of an algorithm running t
      5. Finally, it computes the result of the complex program.
 <br>
 
-- #### Branch & Bound Algorithm
+- ### Branch & Bound Algorithm
   - The **branch and bound algorithm** can be applied to **only integer programming problems**. This approach divides all the sets of feasible solutions into smaller subsets. These subsets are further evaluated to find the best solution.
 <br>
 
-- #### Randomized Algorithm
+- ### Randomized Algorithm
   - As we have seen in a **regular algorithm**, we have **predefined input and required output**. Those algorithms that have some defined set of inputs and required output, and follow some described steps are known as **deterministic algorithms**. 
 <br>
 
@@ -457,27 +456,27 @@ It is the formal way to **express the upper boundary** of an algorithm running t
     - **In a randomized algorithm**, some **random bits** are introduced by the algorithm and added in the input to produce the output, which is random in nature. Randomized algorithms are **simpler and efficient** than the **deterministic algorithm**.
 <br>
 
-- #### Backtracking
+- ### Backtracking
   - **Backtracking** is an **algorithmic technique** that solves the problem **recursively** and **removes the solution** if it does not satisfy the constraints of a problem.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h3 id="cat_algo">The major categories of Algorithms are given below:</h3>
+<h1 id="cat_algo">Major categories of Algorithms</h1>
 
-- #### Sort 
+- ### Sort 
   - Algorithm developed for sorting the items in a certain order.
-- #### Search
+- ### Search
   - Algorithm developed for searching the items inside a data structure.
-- #### Delete
+- ### Delete
   - Algorithm developed for deleting the existing element from the data structure.
-- #### Insert
+- ### Insert
   - Algorithm developed for inserting an item inside a data structure.
-- #### Update
+- ### Update
   - Algorithm developed for updating the existing element inside a data structure.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h2 id="algo_analysis">Algorithm Analysis</h2>
+<h1 id="algo_analysis">Algorithm Analysis</h1>
 
 The **algorithm** can be **analyzed** in two levels, i.e., first is **before creating the algorithm**, and second is **after creating the algorithm**. The following are the two **analysis of an algorithm**:
 
@@ -486,15 +485,15 @@ The **algorithm** can be **analyzed** in two levels, i.e., first is **before cre
 <br>
 
 - ### Posterior Analysis
-  -  Here, **posterior analysis** is a **practical analysis** of an algorithm. The **practical analysis** is achieved by implementing the algorithm using any **programming language**. This analysis basically evaluate that **how much running time and space** taken by the algorithm.
+  - Here, **posterior analysis** is a **practical analysis** of an algorithm. The **practical analysis** is achieved by implementing the algorithm using any **programming language**. This analysis basically evaluate that **how much running time and space** taken by the algorithm.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h2 id="algo_comlexity">Algorithm Complexity</h2>
+<h1 id="algo_comlexity">Algorithm Complexity</h1>
 
 The **performance** of the **algorithm** can be measured in **two factors**:
 
-### 1. Time Complexity
+## 1. Time Complexity
   - The **time complexity of an algorithm** is the **amount of time** required to **complete the execution**. 
   <br>
 
@@ -505,7 +504,7 @@ The **performance** of the **algorithm** can be measured in **two factors**:
   - The **time complexity** is mainly calculated by **counting the number of steps** to finish the execution.
 <br>
 
-### 2. Space Complexity
+## 2. Space Complexity
   - An **algorithm's space complexity** is the **amount of space required** to solve a problem and produce an output. Similar to the **time complexity**, **space complexity** is also expressed in **big O** notation.
 
 ### Auxiliary Space
@@ -516,239 +515,243 @@ The **performance** of the **algorithm** can be measured in **two factors**:
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
-<h1 id="type_algo">Types of Algorithm:</h1>
+<h1 id="type_algo">Types of Algorithm</h1>
 <span id="Search_Algo"></span>
 
-- ## Search Algorithm
-  - On each day, we search for something in our day to day life. Similarly, with the case of computer, huge data is stored in a computer that whenever the user asks for any data then the computer searches for that data in the memory and provides that data to the user. There are mainly two techniques available to search the data in an array:
-    <span id="linear_search"></span>
+# Search Algorithm
+On each day, we search for something in our day to day life. Similarly, with the case of computer, huge data is stored in a computer that whenever the user asks for any data then the computer searches for that data in the memory and provides that data to the user. There are mainly two techniques available to search the data in an array:
+<span id="linear_search"></span>
 
-    #### 1. Linear Search
-      - Linear search is a very simple algorithm that starts searching for an element or a value from the beginning of an array until the required element is not found. It compares the element to be searched with all the elements in an array, if the match is found, then it returns the index of the element else it returns -1. This algorithm can be implemented on the unsorted list.
-      <br> 
-      <img src="Pic/Linear-Search.png">
-      <br>    
+### 1. Linear Search
+  - Linear search is a very simple algorithm that starts searching for an element or a value from the beginning of an array until the required element is not found. It compares the element to be searched with all the elements in an array, if the match is found, then it returns the index of the element else it returns -1. This algorithm can be implemented on the unsorted list.
+  <br> 
+  <img src="Pic/Linear-Search.png">
+  <br>    
 
-      ```C++
-        // Array Name: arr
-        // Array Size: N
-        // Element to be searched: x
-        int search(int arr[], int N, int x)
-        {
-          int i;
-          for (i = 0; i < N; i++)
-              if (arr[i] == x)
-                  return i;
+  ```C++
+    // Array Name: arr
+    // Array Size: N
+    // Element to be searched: x
+    int search(int arr[], int N, int x)
+    {
+      int i;
+      for (i = 0; i < N; i++)
+          if (arr[i] == x)
+              return i;
+      return -1;
+    }
+  ```
+  <br>
+
+  - **Time Complexity:** **$O(n)$**
+  <br>
+
+  ```C++
+    // Linear Search Recursive Approach
+    int search(int arr[], int N, int x)
+    {
+      if (N == 0) {
           return -1;
+      }
+      else if (arr[N - 1] == x) {
+          // Return the index of found x.
+          return N - 1;
+      }
+      else {
+          int ans = search(arr, N - 1, x);
+          return ans;
+      }
+    }
+  ``` 
+  <br>
+
+  - **Time Complexity:** **$O(n)$**
+      
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>    
+<span id="binary_search"></span>
+
+### 2. Binary Search
+A Binary algorithm is the simplest algorithm that searches the element very quickly. It is used to search the element from the sorted list. The elements must be stored in sequential order or the sorted manner to implement the binary algorithm. Binary search cannot be implemented if the elements are stored in a random manner. It is used to find the middle element of the list.
+<br>
+<img src="Pic/BinarySearch.png">
+<br>
+
+  ```C++  
+    // Iteration Method
+    // Array arr[low...high] is sorted
+    int binarySearch(int arr[], int low, int high, int x)
+    {
+        while (low <= high) {
+            int mid = (high - low) / 2;
+            // Check if x is present at mid
+            if (arr[mid] == x)
+                return mid;
+            // If x greater, ignore left half
+            if (arr[mid] < x)
+                low = mid + 1;
+            // If x is smaller, ignore right half
+            else
+                high = mid - 1;
         }
-      ```
-      <br>
+        // if we reach here, then element was
+        // not present
+        return -1;
+    }
+  ``` 
+  <br>
 
-      - **Time Complexity:** **$O(n)$**
-      <br>
+  - **Time Complexity**: **$O(log n)$**
+  <br> 
 
-      ```C++
-        // Linear Search Recursive Approach
-        int search(int arr[], int N, int x)
-        {
-          if (N == 0) {
-              return -1;
+  ```C++
+      // Recursive Method
+      // Array arr[low...high] is sorted
+      int binarySearch(int arr[], int low, int high, int x)
+      {
+          if (high >= low) {
+              int mid = (high - low) / 2;
+              // If the element is present at the middle itself
+              if (arr[mid] == x)
+                  return mid;
+              // If element is smaller than mid, then it can only be present in left subarray
+              if (arr[mid] > x)
+                  return binarySearch(arr, low, mid - 1, x);
+              // Else the element can only be present in right subarray
+              return binarySearch(arr, mid + 1, high, x);
           }
-          else if (arr[N - 1] == x) {
-              // Return the index of found x.
-              return N - 1;
-          }
-          else {
-              int ans = search(arr, N - 1, x);
-              return ans;
-          }
-        }
-      ``` 
-      <br>
+          // We reach here when element is not present in array
+          return -1;
+      }
+  ```
+  <br>
 
-      - **Time Complexity:** **$O(n)$**
-         
-    <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>    
-    <span id="binary_search"></span>
-
-    #### 2. Binary Search
-      - A Binary algorithm is the simplest algorithm that searches the element very quickly. It is used to search the element from the sorted list. The elements must be stored in sequential order or the sorted manner to implement the binary algorithm. Binary search cannot be implemented if the elements are stored in a random manner. It is used to find the middle element of the list.
-      <br>
-      <img src="Pic/BinarySearch.png">
-      <br>
-
-      ```C++  
-        // Iteration Method
-        // Array arr[low...high] is sorted
-        int binarySearch(int arr[], int low, int high, int x)
-        {
-            while (low <= high) {
-                int mid = (high - low) / 2;
-                // Check if x is present at mid
-                if (arr[mid] == x)
-                    return mid;
-                // If x greater, ignore left half
-                if (arr[mid] < x)
-                    low = mid + 1;
-                // If x is smaller, ignore right half
-                else
-                    high = mid - 1;
-            }
-            // if we reach here, then element was
-            // not present
-            return -1;
-        }
-      ``` 
-      <br>
-
-      - **Time Complexity**: **$O(log n)$**
-      <br> 
-
-      ```C++
-          // Recursive Method
-          // Array arr[low...high] is sorted
-          int binarySearch(int arr[], int low, int high, int x)
-          {
-              if (high >= low) {
-                  int mid = (high - low) / 2;
-                  // If the element is present at the middle itself
-                  if (arr[mid] == x)
-                      return mid;
-                  // If element is smaller than mid, then it can only be present in left subarray
-                  if (arr[mid] > x)
-                      return binarySearch(arr, low, mid - 1, x);
-                  // Else the element can only be present in right subarray
-                  return binarySearch(arr, mid + 1, high, x);
-              }
-              // We reach here when element is not present in array
-              return -1;
-          }
-      ```
-      <br>
-
-      - **Time Complexity**: **$O(log n)$**
-      <br> 
+  - **Time Complexity**: **$O(log n)$**
+  <br> 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="Sort_Algo"></span>
 
-- ## Sort Algorithm
-  - Sorting algorithms are used to rearrange the elements in an array or a given data structure either in an ascending or descending order. The comparison operator decides the new order of the elements.
+# Sort Algorithm
+Sorting algorithms are used to rearrange the elements in an array or a given data structure either in an ascending or descending order. The comparison operator decides the new order of the elements.
+<br>
+
+**Why do we need a sorting algorithm?**
+- An efficient sorting algorithm is required for optimizing the efficiency of other algorithms like binary search algorithm as a binary search algorithm requires an array to be sorted in a particular order, mainly in ascending order.
+<br>
+
+- It produces information in a sorted order, which is a human-readable format.
+<br>
+ 
+- Searching a particular element in a sorted list is faster than the unsorted list.
+ 
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="bubble"></span>
+
+- ## Bubble Sort
+  - Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+  <br>
+  <img src="Pic/bubble-short.png">
+  <br>
+
+  ```C++
+    // Bubble Sort
+    void bubbleSort(int arr[], int n)
+    {
+        int i, j;
+        for (i = 0; i < n - 1; i++)
+            // Last i elements are already in place
+            for (j = 0; j < n - i - 1; j++)
+                if (arr[j] > arr[j + 1])
+                    swap(&arr[j], &arr[j + 1]);
+    }
+  ```
+  <br>
+
+  ```C++
+    // Bubble Sort Recursive Approach
+    void bubbleSort(int arr[], int n)
+    {
+        // Base case
+        if (n == 1 || n == 0)
+            return;
+        // One pass of bubble sort. After
+        // this pass, the largest element
+        // is moved (or bubbled) to end.
+        for (int i = 0; i < n - 1; i++)
+            if (arr[i] > arr[i + 1])
+                swap(&arr[i], &arr[i + 1]);
+        // Largest element is fixed,
+        // recur for remaining array
+        bubbleSort(arr, n - 1);
+    }
+  ```
+  - **Time Complexity**
+    - Best Case: **$O(n)$**
+    - Average Case: **$O(n^2)$**
+    - Worst Case: **$O(n^2)$**
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="merge"></span>
+
+- ## Merge Sort
+    - Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
+    <br>
+    <img src="Pic/MergeSortTutorial.png">
     <br>
 
-  - **Why do we need a sorting algorithm?**
-    -  An efficient sorting algorithm is required for optimizing the efficiency of other algorithms like binary search algorithm as a binary search algorithm requires an array to be sorted in a particular order, mainly in ascending order.
-    - It produces information in a sorted order, which is a human-readable format.
-    - Searching a particular element in a sorted list is faster than the unsorted list.
-   
-    <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
-    <span id="bubble"></span>
 
-    - ### Bubble Sort
-        - Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
-        <br>
-        <img src="Pic/bubble-short.png">
-        <br>
-
-        ```C++
-          // Bubble Sort
-          void bubbleSort(int arr[], int n)
-          {
-              int i, j;
-              for (i = 0; i < n - 1; i++)
-                  // Last i elements are already in place
-                  for (j = 0; j < n - i - 1; j++)
-                      if (arr[j] > arr[j + 1])
-                          swap(&arr[j], &arr[j + 1]);
-          }
-        ```
-        <br>
-
-        ```C++
-          // Bubble Sort Recursive Approach
-          void bubbleSort(int arr[], int n)
-          {
-              // Base case
-              if (n == 1 || n == 0)
-                  return;
-              // One pass of bubble sort. After
-              // this pass, the largest element
-              // is moved (or bubbled) to end.
-              for (int i = 0; i < n - 1; i++)
-                  if (arr[i] > arr[i + 1])
-                      swap(&arr[i], &arr[i + 1]);
-              // Largest element is fixed,
-              // recur for remaining array
-              bubbleSort(arr, n - 1);
-          }
-        ```
-        - **Time Complexity**
-          - Best Case: **$O(n)$**
-          - Average Case: **$O(n^2)$**
-          - Worst Case: **$O(n^2)$**
-
-    <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
-    <span id="merge"></span>
-
-    - ### Merge Sort
-        - Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
-        <br>
-        <img src="Pic/MergeSortTutorial.png">
-        <br>
-
-
-        ```C++
-          // Merge Sort
-          void merge(int arr[], int l, int m, int r)
-          {
-              int i, j, k;
-              int n1 = m - l + 1;
-              int n2 = r - m;
-              // create temp arrays
-              int L[n1], R[n2];
-              // Copy data to temp arrays L[] and R[]
-              for (i = 0; i < n1; i++)
-                  L[i] = arr[l + i];
-              for (j = 0; j < n2; j++)
-                  R[j] = arr[m + 1 + j];
-              // Merge the temp arrays back into arr[l..r]
-              i = 0; // Initial index of first subarray
-              j = 0; // Initial index of second subarray
-              k = l; // Initial index of merged subarray
-              while (i < n1 && j < n2) {
-                  if (L[i] <= R[j]) {
-                      arr[k] = L[i];
-                      i++;
-                  }
-                  else {
-                      arr[k] = R[j];
-                      j++;
-                  }
-                  k++;
-              }
-              // Copy the remaining elements of L[], if there are any
-              while (i < n1) {
+    ```C++
+      // Merge Sort
+      void merge(int arr[], int l, int m, int r)
+      {
+          int i, j, k;
+          int n1 = m - l + 1;
+          int n2 = r - m;
+          // create temp arrays
+          int L[n1], R[n2];
+          // Copy data to temp arrays L[] and R[]
+          for (i = 0; i < n1; i++)
+              L[i] = arr[l + i];
+          for (j = 0; j < n2; j++)
+              R[j] = arr[m + 1 + j];
+          // Merge the temp arrays back into arr[l..r]
+          i = 0; // Initial index of first subarray
+          j = 0; // Initial index of second subarray
+          k = l; // Initial index of merged subarray
+          while (i < n1 && j < n2) {
+              if (L[i] <= R[j]) {
                   arr[k] = L[i];
                   i++;
-                  k++;
               }
-              // Copy the remaining elements of R[], if there are any
-              while (j < n2) {
+              else {
                   arr[k] = R[j];
                   j++;
-                  k++;
               }
+              k++;
           }
-          // l is for left index and r is right index of the sub-array of arr to be sorted
-          void mergeSort(int arr[], int l, int r)
-          {
-              if (l < r) {
-                  // Same as (l+r)/2, but avoids overflow for
-        ```
-        
-        - **Time Complexity**
-          - Best Case: **$O(nlogn)$**
-          - Average Case: **$O(nlogn)$**
-          - Worst Case: **$O(nlogn)$**
+          // Copy the remaining elements of L[], if there are any
+          while (i < n1) {
+              arr[k] = L[i];
+              i++;
+              k++;
+          }
+          // Copy the remaining elements of R[], if there are any
+          while (j < n2) {
+              arr[k] = R[j];
+              j++;
+              k++;
+          }
+      }
+      // l is for left index and r is right index of the sub-array of arr to be sorted
+      void mergeSort(int arr[], int l, int r)
+      {
+          if (l < r) {
+              // Same as (l+r)/2, but avoids overflow for
+    ```
+    
+    - **Time Complexity**
+      - Best Case: **$O(nlogn)$**
+      - Average Case: **$O(nlogn)$**
+      - Worst Case: **$O(nlogn)$**
 
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
