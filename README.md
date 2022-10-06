@@ -41,20 +41,18 @@
     <li><a href="#data">Data Definition</a>
     </li>
     <li><a href="#ds_start">Data Structure Definition</a>
-        <ul>
-            <li><a href="#type_ds">Types of DS</a></li>
-            <li><a href="#need_ds">Need of DS</a></li>
-            <li><a href="#advantage_ds">Advantages of a DS</a></li>
-            <li><a href="#DS_operation">DS Operations</a></li>
-            <li><a href="#Usage_of_DS">Usage of DS</a></li>
-            <li><a href="#Asymptotic_Notations">Asymptotic Notations</a>
-              <ul>
-                <li><a href="#big_o">Big O</a></li>
-                <li><a href="#omega">Omega</a></li>
-                <li><a href="#theta">Theta</a></li>
-              </ul></li>
-            <li><a href="#CommonAsymptoticNotations">Common Asymptotic Notations</a></li>
-        </ul>
+    <li><a href="#type_ds">Types of DS</a></li>
+    <li><a href="#need_ds">Need of DS</a></li>
+    <li><a href="#advantage_ds">Advantages of a DS</a></li>
+    <li><a href="#DS_operation">DS Operations</a></li>
+    <li><a href="#Usage_of_DS">Usage of DS</a></li>
+    <li><a href="#Asymptotic_Notations">Asymptotic Notations</a>
+      <ul>
+        <li><a href="#big_o">Big O</a></li>
+        <li><a href="#omega">Omega</a></li>
+        <li><a href="#theta">Theta</a></li>
+      </ul></li>
+    <li><a href="#CommonAsymptoticNotations">Common Asymptotic Notations</a></li>
     </li>
     <li><a href="#popular_ds">Popular types of Data Structures</a>
         <ul>
@@ -73,35 +71,43 @@
         </ul>
     </li>
     <li><a href="#start_ds">Algorithm Definition</a>
+    <li><a href="#char_algorithm">Characteristics of an Algorithm</a></li>
+    <li><a href="#dataflow">Dataflow of an Algorithm</a></li>
+    <li><a href="#need_algo">Need of Algorithms</a></li>
+    <li><a href="#algo_factors">Factors of an Algorithm</a></li>
+    <li><a href="#importance_algo">Importance of Algorithms</a></li>
+    <li><a href="#issues_algo">Issues of Algorithms</a></li>
+    <li><a href="#appro_algo">Approaches of Algorithm</a>
+      <ul>
+        <li><a href="#brute_force">Brute Force</a></li>
+        <li><a href="#divide">Divide & Conquer</a></li>
+        <li><a href="#greedy">Greedy</a></li>
+        <li><a href="#dynamic">Dynamic Programming</a></li>
+        <li><a href="#branch">Branch & Bound</a></li>
+        <li><a href="#random">Randomized</a></li>
+        <li><a href="#back">Backtracking</a></li>
+      </ul>
+    </li>
+    <li><a href="#cat_algo">Categories of Algorithms</a></li>
+    <li><a href="#algo_analysis">Algorithm Analysis</a></li>
+    <li><a href="#algo_comlexity">Algorithm Complexity</a></li>
+    <li><a href="#type_algo">Types of Algorithms</a>
         <ul>
-            <li><a href="#char_algorithm">Characteristics of an Algorithm</a></li>
-            <li><a href="#dataflow">Dataflow of an Algorithm</a></li>
-            <li><a href="#need_algo">Need of Algorithms</a></li>
-            <li><a href="#algo_factors">Factors of an Algorithm</a></li>
-            <li><a href="#importance_algo">Importance of Algorithms</a></li>
-            <li><a href="#issues_algo">Issues of Algorithms</a></li>
-            <li><a href="#appro_algo">Approaches of Algorithm</a></li>
-            <li><a href="#cat_algo">Categories of Algorithms</a></li>
-            <li><a href="#algo_analysis">Algorithm Analysis</a></li>
-            <li><a href="#algo_comlexity">Algorithm Complexity</a></li>
-            <li><a href="#type_algo">Types of Algorithms</a>
+            <li><a href="#Search_Algo">Search Algorithm</a>
                 <ul>
-                    <li><a href="#Search_Algo">Search Algorithm</a>
-                        <ul>
-                            <li><a href="#linear_search">Linear Search</a></li>
-                            <li><a href="#binary_search">Binary Search</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#Sort_Algo">Sort Algorithm</a>
-                        <ul>
-                            <li><a href="#bubble">Bubble Sort</a></li>
-                            <li><a href="#merge">Merge Sort</a></li>
-                            <!--<li><a href="#"></a></li>-->
-                        </ul>
-                    </li>
+                    <li><a href="#linear_search">Linear Search</a></li>
+                    <li><a href="#binary_search">Binary Search</a></li>
+                </ul>
+            </li>
+            <li><a href="#Sort_Algo">Sort Algorithm</a>
+                <ul>
+                    <li><a href="#bubble">Bubble Sort</a></li>
+                    <li><a href="#merge">Merge Sort</a></li>
+                    <!--<li><a href="#"></a></li>-->
                 </ul>
             </li>
         </ul>
+    </li>
     </li>
 </ul>
 
@@ -417,23 +423,46 @@ It is the formal way to **express the upper boundary** of an algorithm running t
 
 <h1 id="appro_algo">Approaches for Designing an Algorithm</h1>
 
-- ### Brute force algorithm 
+<span id="brute_force"></span>
+
+- ## Brute force algorithm 
   - The **general logic structure** is applied to **design an algorithm**. It is also known as an **exhaustive search algorithm** that searches all the **possibilities** to provide the required solution. Such algorithms are of two types:
     - **Optimizing**
       - Finding **all the solutions of a problem** and then take out the **best solution** or if the value of the best solution is known then it will terminate if the best solution is known.
     - **Sacrificing**
       -  As soon as the best solution is found, then it will **stop**.
 <br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="divide"></span>
 
-- ### Divide & Conquer
-  -  It is a **very implementation of an algorithm**. It allows you to design an algorithm in a **step-by-step variation**. It allows you to break down the problem into **different methods**, and **valid output** is produced for the **valid input**. This valid output is passed to some other function.
-<br>
+- ## Divide & Conquer
+  - **Divide and Conquer** is an **algorithmic pattern**. In **algorithmic methods**, **break the input into minor pieces**, decide the problem on each of the **small pieces**, and then **merge** the **piecewise solutions** into a **global solution**.
+  <br>
 
-- ### Greedy Algorithm
+  - ### Steps for Divide & Conquer
+    - **Divide** the problem into **smaller sub-problems**.
+    - **Conquer of Solve** the sub-problems **recursively**.
+    - **Combine** the **solutions** of the sub-problems to **solve** the original problem.
+  <br>
+  <img src="Pic/divide-and-conquer-introduction.png">
+  <br>
+
+  - **Examples:** The **specific computer algorithms** are based on the **Divide & Conquer approach**:
+    1. **[Maximum and Minimum Problem]()**
+    2. **[Binary Search]()**
+    3. **[Sorting (merge sort, quick sort)]()**
+    4. **[Tower of Hanoi]()**
+  
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="greedy"></span>
+
+- ## Greedy Algorithm
   -  It is an **algorithm paradigm** that makes an optimal choice on each iteration with the hope of getting the best solution. It is **easy to implement** and has a **faster execution time**. But, there are very rare cases in which it provides the optimal solution.
 <br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="dynamic"></span>
 
-- ### Dynamic programming
+- ## Dynamic programming
   -  It makes the algorithm more **efficient** by **storing the intermediate results**. It follows **five different steps** to **find the optimal solution** for the problem:
      1. It breaks down the **problem** into a **subproblem** to find the **optimal solution**.
      2. After breaking down the problem, it finds the optimal solution out of these subproblems.
@@ -441,20 +470,26 @@ It is the formal way to **express the upper boundary** of an algorithm running t
      4. Reuse the result so that it cannot be recomputed for the same subproblems.
      5. Finally, it computes the result of the complex program.
 <br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="branch"></span>
 
-- ### Branch & Bound Algorithm
+- ## Branch & Bound Algorithm
   - The **branch and bound algorithm** can be applied to **only integer programming problems**. This approach divides all the sets of feasible solutions into smaller subsets. These subsets are further evaluated to find the best solution.
 <br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="random"></span>
 
-- ### Randomized Algorithm
+- ## Randomized Algorithm
   - As we have seen in a **regular algorithm**, we have **predefined input and required output**. Those algorithms that have some defined set of inputs and required output, and follow some described steps are known as **deterministic algorithms**. 
 <br>
 
   - What happens that when the **random variable** is introduced in the **randomized algorithm**?
     - **In a randomized algorithm**, some **random bits** are introduced by the algorithm and added in the input to produce the output, which is random in nature. Randomized algorithms are **simpler and efficient** than the **deterministic algorithm**.
 <br>
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="back"></span>
 
-- ### Backtracking
+- ## Backtracking
   - **Backtracking** is an **algorithmic technique** that solves the problem **recursively** and **removes the solution** if it does not satisfy the constraints of a problem.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
