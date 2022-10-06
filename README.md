@@ -323,8 +323,6 @@ It is the formal way to **express the upper boundary** of an algorithm running t
       <li><h3>Disadvantages of Array</h3></li>
     </ul>
   </li>
-
-
 </ul>
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
@@ -529,17 +527,17 @@ On each day, we search for something in our day to day life. Similarly, with the
   <br>    
 
   ```C++
-    // Array Name: arr
-    // Array Size: N
-    // Element to be searched: x
-    int search(int arr[], int N, int x)
-    {
-      int i;
-      for (i = 0; i < N; i++)
-          if (arr[i] == x)
-              return i;
-      return -1;
-    }
+  // Array Name: arr
+  // Array Size: N
+  // Element to be searched: x
+  int search(int arr[], int N, int x)
+  {
+    int i;
+    for (i = 0; i < N; i++)
+        if (arr[i] == x)
+            return i;
+    return -1;
+  }
   ```
   <br>
 
@@ -547,21 +545,21 @@ On each day, we search for something in our day to day life. Similarly, with the
   <br>
 
   ```C++
-    // Linear Search Recursive Approach
-    int search(int arr[], int N, int x)
-    {
-      if (N == 0) {
-          return -1;
-      }
-      else if (arr[N - 1] == x) {
-          // Return the index of found x.
-          return N - 1;
-      }
-      else {
-          int ans = search(arr, N - 1, x);
-          return ans;
-      }
+  // Linear Search Recursive Approach
+  int search(int arr[], int N, int x)
+  {
+    if (N == 0) {
+        return -1;
     }
+    else if (arr[N - 1] == x) {
+        // Return the index of found x.
+        return N - 1;
+    }
+    else {
+        int ans = search(arr, N - 1, x);
+        return ans;
+    }
+  }
   ``` 
   <br>
 
@@ -577,26 +575,26 @@ A Binary algorithm is the simplest algorithm that searches the element very quic
 <br>
 
   ```C++  
-    // Iteration Method
-    // Array arr[low...high] is sorted
-    int binarySearch(int arr[], int low, int high, int x)
-    {
-        while (low <= high) {
-            int mid = (high - low) / 2;
-            // Check if x is present at mid
-            if (arr[mid] == x)
-                return mid;
-            // If x greater, ignore left half
-            if (arr[mid] < x)
-                low = mid + 1;
-            // If x is smaller, ignore right half
-            else
-                high = mid - 1;
-        }
-        // if we reach here, then element was
-        // not present
-        return -1;
-    }
+  // Iteration Method
+  // Array arr[low...high] is sorted
+  int binarySearch(int arr[], int low, int high, int x)
+  {
+      while (low <= high) {
+          int mid = (high - low) / 2;
+          // Check if x is present at mid
+          if (arr[mid] == x)
+              return mid;
+          // If x greater, ignore left half
+          if (arr[mid] < x)
+              low = mid + 1;
+          // If x is smaller, ignore right half
+          else
+              high = mid - 1;
+      }
+      // if we reach here, then element was
+      // not present
+      return -1;
+  }
   ``` 
   <br>
 
@@ -604,24 +602,24 @@ A Binary algorithm is the simplest algorithm that searches the element very quic
   <br> 
 
   ```C++
-      // Recursive Method
-      // Array arr[low...high] is sorted
-      int binarySearch(int arr[], int low, int high, int x)
-      {
-          if (high >= low) {
-              int mid = (high - low) / 2;
-              // If the element is present at the middle itself
-              if (arr[mid] == x)
-                  return mid;
-              // If element is smaller than mid, then it can only be present in left subarray
-              if (arr[mid] > x)
-                  return binarySearch(arr, low, mid - 1, x);
-              // Else the element can only be present in right subarray
-              return binarySearch(arr, mid + 1, high, x);
-          }
-          // We reach here when element is not present in array
-          return -1;
+  // Recursive Method
+  // Array arr[low...high] is sorted
+  int binarySearch(int arr[], int low, int high, int x)
+  {
+      if (high >= low) {
+          int mid = (high - low) / 2;
+          // If the element is present at the middle itself
+          if (arr[mid] == x)
+              return mid;
+          // If element is smaller than mid, then it can only be present in left subarray
+          if (arr[mid] > x)
+              return binarySearch(arr, low, mid - 1, x);
+          // Else the element can only be present in right subarray
+          return binarySearch(arr, mid + 1, high, x);
       }
+      // We reach here when element is not present in array
+      return -1;
+  }
   ```
   <br>
 
@@ -640,7 +638,7 @@ Sorting algorithms are used to rearrange the elements in an array or a given dat
 
 - It produces information in a sorted order, which is a human-readable format.
 <br>
- 
+
 - Searching a particular element in a sorted list is faster than the unsorted list.
  
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
@@ -653,36 +651,36 @@ Sorting algorithms are used to rearrange the elements in an array or a given dat
   <br>
 
   ```C++
-    // Bubble Sort
-    void bubbleSort(int arr[], int n)
-    {
-        int i, j;
-        for (i = 0; i < n - 1; i++)
-            // Last i elements are already in place
-            for (j = 0; j < n - i - 1; j++)
-                if (arr[j] > arr[j + 1])
-                    swap(&arr[j], &arr[j + 1]);
-    }
+  // Bubble Sort
+  void bubbleSort(int arr[], int n)
+  {
+      int i, j;
+      for (i = 0; i < n - 1; i++)
+          // Last i elements are already in place
+          for (j = 0; j < n - i - 1; j++)
+              if (arr[j] > arr[j + 1])
+                  swap(&arr[j], &arr[j + 1]);
+  }
   ```
   <br>
 
   ```C++
-    // Bubble Sort Recursive Approach
-    void bubbleSort(int arr[], int n)
-    {
-        // Base case
-        if (n == 1 || n == 0)
-            return;
-        // One pass of bubble sort. After
-        // this pass, the largest element
-        // is moved (or bubbled) to end.
-        for (int i = 0; i < n - 1; i++)
-            if (arr[i] > arr[i + 1])
-                swap(&arr[i], &arr[i + 1]);
-        // Largest element is fixed,
-        // recur for remaining array
-        bubbleSort(arr, n - 1);
-    }
+  // Bubble Sort Recursive Approach
+  void bubbleSort(int arr[], int n)
+  {
+      // Base case
+      if (n == 1 || n == 0)
+          return;
+      // One pass of bubble sort. After
+      // this pass, the largest element
+      // is moved (or bubbled) to end.
+      for (int i = 0; i < n - 1; i++)
+          if (arr[i] > arr[i + 1])
+              swap(&arr[i], &arr[i + 1]);
+      // Largest element is fixed,
+      // recur for remaining array
+      bubbleSort(arr, n - 1);
+  }
   ```
   - **Time Complexity**
     - Best Case: **$O(n)$**
@@ -701,53 +699,58 @@ Sorting algorithms are used to rearrange the elements in an array or a given dat
 
     ```C++
       // Merge Sort
-      void merge(int arr[], int l, int m, int r)
-      {
-          int i, j, k;
-          int n1 = m - l + 1;
-          int n2 = r - m;
-          // create temp arrays
-          int L[n1], R[n2];
-          // Copy data to temp arrays L[] and R[]
-          for (i = 0; i < n1; i++)
-              L[i] = arr[l + i];
-          for (j = 0; j < n2; j++)
-              R[j] = arr[m + 1 + j];
-          // Merge the temp arrays back into arr[l..r]
-          i = 0; // Initial index of first subarray
-          j = 0; // Initial index of second subarray
-          k = l; // Initial index of merged subarray
-          while (i < n1 && j < n2) {
-              if (L[i] <= R[j]) {
-                  arr[k] = L[i];
-                  i++;
-              }
-              else {
-                  arr[k] = R[j];
-                  j++;
-              }
-              k++;
-          }
-          // Copy the remaining elements of L[], if there are any
-          while (i < n1) {
-              arr[k] = L[i];
-              i++;
-              k++;
-          }
-          // Copy the remaining elements of R[], if there are any
-          while (j < n2) {
-              arr[k] = R[j];
-              j++;
-              k++;
-          }
-      }
-      // l is for left index and r is right index of the sub-array of arr to be sorted
-      void mergeSort(int arr[], int l, int r)
-      {
-          if (l < r) {
-              // Same as (l+r)/2, but avoids overflow for
+    void merge(int arr[], int beg, int mid, int end)
+    {
+        int i, j, k;
+        int n1 = mid - beg + 1;
+        int n2 = end - mid;
+        // create temp arrays
+        int L[n1], R[n2];
+        // Copy data to temp arrays L[] and R[]
+        for (i = 0; i < n1; i++)
+            L[i] = arr[beg + i];
+        for (j = 0; j < n2; j++)
+            R[j] = arr[mid + 1 + j];
+        // Merge the temp arrays back into arr[l..r]
+        i = 0; // Initial index of first subarray
+        j = 0; // Initial index of second subarray
+        k = l; // Initial index of merged subarray
+        while (i < n1 && j < n2){
+            if (L[i] <= R[j]) {
+                arr[k] = L[i];
+                i++;
+            }
+            else {
+                arr[k] = R[j];
+                j++;
+            }
+            k++;
+        }
+        // Copy the remaining elements of L[], if there are any
+        while (i < n1){
+            arr[k] = L[i];
+            i++;
+            k++;
+        }
+        // Copy the remaining elements of R[], if there are any
+        while (j < n2){
+            arr[k] = R[j];
+            j++;
+            k++;
+        }
+    }
+    // beg is for left index and end is right index of the sub-array of arr to be sorted
+    void mergeSort(int arr[], int beg, int end)
+    {
+      if (beg < end){  
+        int mid = (beg + end) / 2;  
+        mergeSort(a, beg, mid);  
+        mergeSort(a, mid + 1, end);  
+        merge(a, beg, mid, end);  
+      }  
     ```
-    
+    <img src="Pic/Merge-sort-example-300px.gif">
+
     - **Time Complexity**
       - Best Case: **$O(nlogn)$**
       - Average Case: **$O(nlogn)$**
