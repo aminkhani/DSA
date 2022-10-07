@@ -41,7 +41,12 @@
     <li><a href="#data">Data Definition</a>
     </li>
     <li><a href="#ds_start">Data Structure Definition</a>
-    <li><a href="#type_ds">Types of DS</a></li>
+    <li><a href="#type_ds">Types of DS</a>
+      <ol>
+        <li><a href="#primitive">Primitive DS</a></li>
+        <li><a href="#nonprimitive">Non-primitive DS</a></li>
+      </ol>
+    </li>
     <li><a href="#need_ds">Need of DS</a></li>
     <li><a href="#advantage_ds">Advantages of a DS</a></li>
     <li><a href="#DS_operation">DS Operations</a></li>
@@ -140,9 +145,13 @@
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <h1 id="type_ds">Types of Data Structures</h1>
+<span id="primitive"></span>
 
 ### 1. Primitive Data Structure
   - The **primitive data structures** are **primitive data types**. The **int**, **char**, **float**, **double**, and **pointer** are the primitive data structures that can **hold a single value**.
+
+<span id="nonprimitive"></span>
+
 ### 2. Non-primitive Data Structure
   - Linear Data Structure
   - Non-linear Data Structure
@@ -247,11 +256,11 @@ The commonly used **asymptotic notations** used for calculating the **running ti
 
 <span id="big_o"></span>
 
-- ### Big O Notation (O)
-  - **Big O** notation is an asymptotic notation that measures the performance of an algorithm by simply providing the order of growth of the function.
-  <br>
+## Big O Notation (O)
+- **Big O** notation is an asymptotic notation that measures the performance of an algorithm by simply providing the order of growth of the function.
+<br>
 
-  - This notation provides an **upper bound** on a function which ensures that the **function never grows faster than the upper bound**.
+- This notation provides an **upper bound** on a function which ensures that the **function never grows faster than the upper bound**.
   
 It is the formal way to **express the upper boundary** of an algorithm running time. It measures the **worst case of time complexity** or the algorithm's **longest amount of time** to complete its operation. It is represented as shown below:
 <br>
@@ -259,28 +268,28 @@ It is the formal way to **express the upper boundary** of an algorithm running t
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="omega"></span>
 
-- ### Omega Notation (Ω)
-  - It basically describes the **best-case scenario** which is opposite to the **big o notation**.
+## Omega Notation (Ω)
+- It basically describes the **best-case scenario** which is opposite to the **big o notation**.
 <br>
 
-  - It is the formal way to represent the **lower bound** of an algorithm's running time. It measures the **best amount of time** an algorithm can possibly take to complete or the best-case time complexity.
+- It is the formal way to represent the **lower bound** of an algorithm's running time. It measures the **best amount of time** an algorithm can possibly take to complete or the best-case time complexity.
 <br>
 
-  - It determines what is the **fastest time** that an algorithm can run.
+- It determines what is the **fastest time** that an algorithm can run.
 
 <span id="theta"></span>
 
-- ### Theta Notation (θ)
-  - The theta notation mainly describes the **average case scenarios**.
-  <br>
+## Theta Notation (θ)
+- The theta notation mainly describes the **average case scenarios**.
+<br>
 
-  - It represents the **realistic time complexity** of an algorithm. Every time, an algorithm does not perform **worst or best**, in real-world problems, algorithms mainly **fluctuate** between the **worst-case and best-case**, and this gives us the average case of the algorithm.
-  <br>
+- It represents the **realistic time complexity** of an algorithm. Every time, an algorithm does not perform **worst or best**, in real-world problems, algorithms mainly **fluctuate** between the **worst-case and best-case**, and this gives us the average case of the algorithm.
+<br>
 
-  - **Big theta** is mainly used when the value of worst-case and the best-case is same.
-  <br>
+- **Big theta** is mainly used when the value of worst-case and the best-case is same.
+<br>
 
-  - It is the formal way to express **both** the **upper bound** and **lower bound** of an algorithm running time.
+- It is the formal way to express **both** the **upper bound** and **lower bound** of an algorithm running time.
 
 <h2 id="CommonAsymptoticNotations">Common Asymptotic Notations</h2>
 
@@ -297,39 +306,45 @@ It is the formal way to **express the upper boundary** of an algorithm running t
 
 <h1 id="popular_ds">Popular Types of Data Structures</h1>
 
-<ul>
-  <li><h2 id="array">Array</h2>
-    <ul>
-      <li>Arrays are defined as the collection of similar or different  types of data items stored at contiguous memory locations.</li><br>
-      <li> It is one of the simplest data structures where each data element can be randomly accessed by using its index number.</li>
-      <li><h3>Properties of Array</h3>
-        <ul>
-          <li>Each element in an array is of the same data type and carries the same size that is 4 bytes.</li><br>
-          <li>Elements in the array are stored at contiguous memory locations from which the first element is stored at the smallest memory location.</li><br>
-          <li>Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.</li><br>
-        </ul>
-      </li>
-      <li><h3>Representation of an Array</h3>
-        <ul>
-          <img src="Pic/ds-array.png"><br>
-          <li>Index starts with 0.</li>
-          <li>The array's length is 10, which means we can store 10 elements.</li>
-          <li>Each element in the array can be accessed via its index.</li>
-        </ul>
-      </li>
-      <li><h3>Why are Arrays Required?</h3>
-        <ul>
-          <li>Sorting and searching a value in an array is easier.</li><br>
-          <li>Arrays are best to process multiple values quickly and easily.</li><br>
-          <li>Arrays are good for storing multiple values in a single variable - In computer programming, most cases require storing a large number of data of a similar type. To store such an amount of data, we need to define a large number of variables. It would be very difficult to remember the names of all the variables while writing the programs. Instead of naming all the variables with a different name, it is better to define an array and store all the elements into it.</li>
-        </ul>
-      </li>
-      <li><h3>Memory Allocation of an Array</h3></li>
-      <li><h3>Advantages of Array</h3></li>
-      <li><h3>Disadvantages of Array</h3></li>
-    </ul>
-  </li>
-</ul>
+<h1 id="array">Array</h1>
+
+- Arrays are defined as the collection of similar or different  types of data items stored at contiguous memory locations.
+<br>
+
+- It is one of the simplest data structures where each data element can be randomly accessed by using its index number.
+
+<h3>Properties of Array</h3>
+
+- Each element in an array is of the same data type and carries the same size that is 4 bytes.
+<br>
+
+- Elements in the array are stored at contiguous memory locations from which the first element is stored at the smallest memory location.
+<br>
+
+- Elements of the array can be randomly accessed since we can calculate the address of each element of the array with the given base address and the size of the data element.
+<br>
+        
+<h3>Representation of an Array</h3>   
+<img src="Pic/ds-array.png"><br>
+
+- Index starts with 0.
+- The array's length is 10, which means we can store 10 elements.
+- Each element in the array can be accessed via its index.
+    
+<h3>Why are Arrays Required?</h3>
+        
+- Sorting and searching a value in an array is easier.
+<br>
+  
+- Arrays are best to process multiple values quickly and easily.
+<br>
+
+- Arrays are good for storing multiple values in a single variable - In computer programming, most cases require storing a large number of data of a similar type. To store such an amount of data, we need to define a large number of variables. It would be very difficult to remember the names of all the variables while writing the programs. Instead of naming all the variables with a different name, it is better to define an array and store all the elements into it.
+      
+<h3>Memory Allocation of an Array</h3>
+<h3>Advantages of Array</h3>
+<h3>Disadvantages of Array</h3>
+
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
@@ -425,72 +440,72 @@ It is the formal way to **express the upper boundary** of an algorithm running t
 
 <span id="brute_force"></span>
 
-- ## Brute force algorithm 
-  - The **general logic structure** is applied to **design an algorithm**. It is also known as an **exhaustive search algorithm** that searches all the **possibilities** to provide the required solution. Such algorithms are of two types:
-    - **Optimizing**
-      - Finding **all the solutions of a problem** and then take out the **best solution** or if the value of the best solution is known then it will terminate if the best solution is known.
-    - **Sacrificing**
-      -  As soon as the best solution is found, then it will **stop**.
+## Brute force algorithm 
+- The **general logic structure** is applied to **design an algorithm**. It is also known as an **exhaustive search algorithm** that searches all the **possibilities** to provide the required solution. Such algorithms are of two types:
+- **Optimizing**
+  - Finding **all the solutions of a problem** and then take out the **best solution** or if the value of the best solution is known then it will terminate if the best solution is known.
+- **Sacrificing**
+  -  As soon as the best solution is found, then it will **stop**.
 <br>
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="divide"></span>
 
-- ## Divide & Conquer
-  - **Divide and Conquer** is an **algorithmic pattern**. In **algorithmic methods**, **break the input into minor pieces**, decide the problem on each of the **small pieces**, and then **merge** the **piecewise solutions** into a **global solution**.
-  <br>
+## Divide & Conquer
+- **Divide and Conquer** is an **algorithmic pattern**. In **algorithmic methods**, **break the input into minor pieces**, decide the problem on each of the **small pieces**, and then **merge** the **piecewise solutions** into a **global solution**.
+<br>
 
-  - ### Steps for Divide & Conquer
-    - **Divide** the problem into **smaller sub-problems**.
-    - **Conquer of Solve** the sub-problems **recursively**.
-    - **Combine** the **solutions** of the sub-problems to **solve** the original problem.
-  <br>
-  <img src="Pic/divide-and-conquer-introduction.png">
-  <br>
+- ### Steps for Divide & Conquer
+  - **Divide** the problem into **smaller sub-problems**.
+  - **Conquer of Solve** the sub-problems **recursively**.
+  - **Combine** the **solutions** of the sub-problems to **solve** the original problem.
+<br>
+<img src="Pic/divide-and-conquer-introduction.png">
+<br>
 
-  - **Examples:** The **specific computer algorithms** are based on the **Divide & Conquer approach**:
-    1. **[Maximum and Minimum Problem]()**
-    2. **[Binary Search]()**
-    3. **[Sorting (merge sort, quick sort)]()**
-    4. **[Tower of Hanoi]()**
-  
+- **Examples:** The **specific computer algorithms** are based on the **Divide & Conquer approach**:
+  1. **[Maximum and Minimum Problem]()**
+  2. **[Binary Search]()**
+  3. **[Sorting (merge sort, quick sort)]()**
+  4. **[Tower of Hanoi]()**
+
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="greedy"></span>
 
-- ## Greedy Algorithm
-  -  It is an **algorithm paradigm** that makes an optimal choice on each iteration with the hope of getting the best solution. It is **easy to implement** and has a **faster execution time**. But, there are very rare cases in which it provides the optimal solution.
+## Greedy Algorithm
+- It is an **algorithm paradigm** that makes an optimal choice on each iteration with the hope of getting the best solution. It is **easy to implement** and has a **faster execution time**. But, there are very rare cases in which it provides the optimal solution.
 <br>
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="dynamic"></span>
 
-- ## Dynamic programming
-  -  It makes the algorithm more **efficient** by **storing the intermediate results**. It follows **five different steps** to **find the optimal solution** for the problem:
-     1. It breaks down the **problem** into a **subproblem** to find the **optimal solution**.
-     2. After breaking down the problem, it finds the optimal solution out of these subproblems.
-     3. **Stores the result** of the subproblems is known as **memorization**.
-     4. Reuse the result so that it cannot be recomputed for the same subproblems.
-     5. Finally, it computes the result of the complex program.
+## Dynamic programming
+- It makes the algorithm more **efficient** by **storing the intermediate results**. It follows **five different steps** to **find the optimal solution** for the problem:
+   1. It breaks down the **problem** into a **subproblem** to find the **optimal solution**.
+   2. After breaking down the problem, it finds the optimal solution out of these subproblems.
+   3. **Stores the result** of the subproblems is known as **memorization**.
+   4. Reuse the result so that it cannot be recomputed for the same subproblems.
+   5. Finally, it computes the result of the complex program.
 <br>
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="branch"></span>
 
-- ## Branch & Bound Algorithm
-  - The **branch and bound algorithm** can be applied to **only integer programming problems**. This approach divides all the sets of feasible solutions into smaller subsets. These subsets are further evaluated to find the best solution.
+## Branch & Bound Algorithm
+- The **branch and bound algorithm** can be applied to **only integer programming problems**. This approach divides all the sets of feasible solutions into smaller subsets. These subsets are further evaluated to find the best solution.
 <br>
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="random"></span>
 
-- ## Randomized Algorithm
-  - As we have seen in a **regular algorithm**, we have **predefined input and required output**. Those algorithms that have some defined set of inputs and required output, and follow some described steps are known as **deterministic algorithms**. 
+## Randomized Algorithm
+- As we have seen in a **regular algorithm**, we have **predefined input and required output**. Those algorithms that have some defined set of inputs and required output, and follow some described steps are known as **deterministic algorithms**. 
 <br>
 
-  - What happens that when the **random variable** is introduced in the **randomized algorithm**?
-    - **In a randomized algorithm**, some **random bits** are introduced by the algorithm and added in the input to produce the output, which is random in nature. Randomized algorithms are **simpler and efficient** than the **deterministic algorithm**.
+- What happens that when the **random variable** is introduced in the **randomized algorithm**?
+  - **In a randomized algorithm**, some **random bits** are introduced by the algorithm and added in the input to produce the output, which is random in nature. Randomized algorithms are **simpler and efficient** than the **deterministic algorithm**.
 <br>
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="back"></span>
 
-- ## Backtracking
-  - **Backtracking** is an **algorithmic technique** that solves the problem **recursively** and **removes the solution** if it does not satisfy the constraints of a problem.
+## Backtracking
+- **Backtracking** is an **algorithmic technique** that solves the problem **recursively** and **removes the solution** if it does not satisfy the constraints of a problem.
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
