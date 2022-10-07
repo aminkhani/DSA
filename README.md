@@ -108,7 +108,7 @@
                 <ul>
                     <li><a href="#bubble">Bubble Sort</a></li>
                     <li><a href="#merge">Merge Sort</a></li>
-                    <!--<li><a href="#"></a></li>-->
+                    <li><a href="#quick">Quick Sort</a></li>
                 </ul>
             </li>
         </ul>
@@ -243,13 +243,13 @@ in order to **solve the above problems**, **data structures are used**. Data is 
 <h1 id="Asymptotic_Notations">Asymptotic Notations</h1>
 
 Usually, the time required by an algorithm comes under three types:
-### 1. Worst Case
+#### 1. Worst Case
   - It defines the input for which the algorithm takes a huge time.
 
-### 2. Average Case
+#### 2. Average Case
   - It takes average time for the program execution.
 
-### 3. Best Case
+#### 3. Best Case
   - It defines the input for which the algorithm takes the lowest time
 
 The commonly used **asymptotic notations** used for calculating the **running time complexity** of an algorithm is given below:
@@ -264,8 +264,11 @@ The commonly used **asymptotic notations** used for calculating the **running ti
   
 It is the formal way to **express the upper boundary** of an algorithm running time. It measures the **worst case of time complexity** or the algorithm's **longest amount of time** to complete its operation. It is represented as shown below:
 <br>
-<img src="Pic/data-structure-asymptotic-analysis.png">
+<img src="Pic/zc02g.jpg">
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<h2 id="small_o">Little o</h2>
+
+<img src="Pic/v2eH3.png">
 <span id="omega"></span>
 
 ## Omega Notation (Ω)
@@ -302,6 +305,7 @@ It is the formal way to **express the upper boundary** of an algorithm running t
 - #### polynomial : n<sup>Ο(1)<sup>
 - #### exponential	: 2<sup>Ο(n)<sup>
 
+<img src="Pic/Complexities-Graph1.png">
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 
 <h1 id="popular_ds">Popular Types of Data Structures</h1>
@@ -468,6 +472,56 @@ It is the formal way to **express the upper boundary** of an algorithm running t
   3. **[Sorting (merge sort, quick sort)]()**
   4. **[Tower of Hanoi]()**
 
+#### Fundamental of Divide & Conquer Strategy:
+- There are two fundamental of **Divide & Conquer Strategy**:
+  1. **Relational Formula**
+     - It is the formula that we generate from the given technique. After generation of Formula we apply D&C Strategy, i.e. we break the problem recursively & solve the broken subproblems.
+   <br>
+
+  2. **Stopping Condition**
+     - When we break the problem using Divide & Conquer Strategy, then we need to know that for how much time, we need to apply divide & Conquer. So the condition where the need to stop our recursion steps of D&C is called as **Stopping Condition**. 
+
+#### Applications of Divide and Conquer Approach:
+Following algorithms are based on the concept of the Divide and Conquer Technique:
+
+- **[Binary Search](#binary_search)**
+- **[Quicksort]()**: It is the most efficient sorting algorithm, which is also known as partition-exchange sort. It starts by selecting a pivot value from an array followed by dividing the rest of the array elements into two sub-arrays. The partition is made by comparing each of the elements with the pivot value. It compares whether the element holds a greater value or lesser value than the pivot and then sort the arrays recursively.
+<br>
+
+- **[Merge Sort](#merge)**
+<br>
+
+- **[Closest Pair of Points]()**: It is a problem of computational geometry. This algorithm emphasizes finding out the closest pair of points in a metric space, given n points, such that the distance between the pair of points should be minimal.
+<br>
+
+- **[Strassen's Algorithm]()**: It is an algorithm for matrix multiplication, which is named after Volker Strassen. It has proven to be much faster than the traditional algorithm when works on large matrices.
+<br>
+
+- **[Cooley-Tukey Fast Fourier Transform (FFT) algorithm]()**: The Fast Fourier Transform algorithm is named after J. W. Cooley and John Turkey. It follows the Divide and Conquer Approach and imposes a complexity of O(nlogn).
+<br>
+
+- **[Karatsuba algorithm for fast multiplication]()**: It is one of the fastest multiplication algorithms of the traditional time, invented by Anatoly Karatsuba in late 1960 and got published in 1962. It multiplies two n-digit numbers in such a way by reducing it to at most single-digit.
+
+#### Advantages of Divide and Conquer
+- **Divide and Conquer** tend to successfully solve one of the biggest problems, such as the **Tower of Hanoi**, a **mathematical puzzle**. It is challenging to solve complicated problems for which you have no basic idea, but with the help of the divide and conquer approach, it has lessened the effort as it works on dividing the main problem into two halves and then solve them **recursively**. This algorithm is much **faster than other algorithms**.
+<br>
+
+- It efficiently uses **cache memory** without **occupying much space** because it solves simple subproblems within the cache memory instead of accessing the slower main memory.
+<br>
+
+- It is more proficient than that of its counterpart Brute Force technique.
+<br>
+
+- Since these algorithms inhibit parallelism, it does not involve any modification and is handled by systems incorporating parallel processing.
+
+#### Disadvantages of Divide and Conquer
+- Since most of its algorithms are designed by incorporating recursion, so it necessitates high memory management.
+<br>
+
+- An explicit stack may overuse the space.
+<br>
+
+- It may even crash the system if the recursion is performed rigorously greater than the stack present in the CPU.
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="greedy"></span>
 
@@ -571,110 +625,110 @@ On each day, we search for something in our day to day life. Similarly, with the
 <span id="linear_search"></span>
 
 ### 1. Linear Search
-  - Linear search is a very simple algorithm that starts searching for an element or a value from the beginning of an array until the required element is not found. It compares the element to be searched with all the elements in an array, if the match is found, then it returns the index of the element else it returns -1. This algorithm can be implemented on the unsorted list.
-  <br> 
-  <img src="Pic/Linear-Search.png">
-  <br>    
+- Linear search is a very simple algorithm that starts searching for an element or a value from the beginning of an array until the required element is not found. It compares the element to be searched with all the elements in an array, if the match is found, then it returns the index of the element else it returns -1. This algorithm can be implemented on the unsorted list.
+<br> 
+<img src="Pic/Linear-Search.png">
+<br>    
 
-  ```C++
-  // Array Name: arr
-  // Array Size: N
-  // Element to be searched: x
-  int search(int arr[], int N, int x)
-  {
-    int i;
-    for (i = 0; i < N; i++)
-        if (arr[i] == x)
-            return i;
-    return -1;
+```C++
+// Array Name: arr
+// Array Size: N
+// Element to be searched: x
+int search(int arr[], int N, int x)
+{
+  int i;
+  for (i = 0; i < N; i++)
+      if (arr[i] == x)
+          return i;
+  return -1;
+}
+```
+<br>
+
+- **Time Complexity:** **$O(n)$**
+<br>
+
+```C++
+// Linear Search Recursive Approach
+int search(int arr[], int N, int x)
+{
+  if (N == 0) {
+      return -1;
   }
-  ```
-  <br>
-
-  - **Time Complexity:** **$O(n)$**
-  <br>
-
-  ```C++
-  // Linear Search Recursive Approach
-  int search(int arr[], int N, int x)
-  {
-    if (N == 0) {
-        return -1;
-    }
-    else if (arr[N - 1] == x) {
-        // Return the index of found x.
-        return N - 1;
-    }
-    else {
-        int ans = search(arr, N - 1, x);
-        return ans;
-    }
+  else if (arr[N - 1] == x) {
+      // Return the index of found x.
+      return N - 1;
   }
-  ``` 
-  <br>
+  else {
+      int ans = search(arr, N - 1, x);
+      return ans;
+  }
+}
+``` 
+<br>
 
-  - **Time Complexity:** **$O(n)$**
+- **Time Complexity:** **$O(n)$**
       
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>    
 <span id="binary_search"></span>
 
 ### 2. Binary Search
-A Binary algorithm is the simplest algorithm that searches the element very quickly. It is used to search the element from the sorted list. The elements must be stored in sequential order or the sorted manner to implement the binary algorithm. Binary search cannot be implemented if the elements are stored in a random manner. It is used to find the middle element of the list.
+The binary search algorithm is a searching algorithm, which is also called a half-interval search or logarithmic search. It works by comparing the target value with the middle element existing in a sorted array. After making the comparison, if the value differs, then the half that cannot contain the target will eventually eliminate, followed by continuing the search on the other half. We will again consider the middle element and compare it with the target value. The process keeps on repeating until the target value is met. If we found the other half to be empty after ending the search, then it can be concluded that the target is not present in the array.
 <br>
 <img src="Pic/BinarySearch.png">
 <br>
 
-  ```C++  
-  // Iteration Method
-  // Array arr[low...high] is sorted
-  int binarySearch(int arr[], int low, int high, int x)
-  {
-      while (low <= high) {
-          int mid = (high - low) / 2;
-          // Check if x is present at mid
-          if (arr[mid] == x)
-              return mid;
-          // If x greater, ignore left half
-          if (arr[mid] < x)
-              low = mid + 1;
-          // If x is smaller, ignore right half
-          else
-              high = mid - 1;
-      }
-      // if we reach here, then element was
-      // not present
-      return -1;
-  }
-  ``` 
-  <br>
+```C++  
+// Iteration Method
+// Array arr[low...high] is sorted
+int binarySearch(int arr[], int low, int high, int x)
+{
+    while (low <= high) {
+        int mid = (high - low) / 2;
+        // Check if x is present at mid
+        if (arr[mid] == x)
+            return mid;
+        // If x greater, ignore left half
+        if (arr[mid] < x)
+            low = mid + 1;
+        // If x is smaller, ignore right half
+        else
+            high = mid - 1;
+    }
+    // if we reach here, then element was
+    // not present
+    return -1;
+}
+``` 
+<br>
 
-  - **Time Complexity**: **$O(log n)$**
-  <br> 
+- **Time Complexity**: **$O(log n)$**
+<br> 
 
-  ```C++
-  // Recursive Method
-  // Array arr[low...high] is sorted
-  int binarySearch(int arr[], int low, int high, int x)
-  {
-      if (high >= low) {
-          int mid = (high - low) / 2;
-          // If the element is present at the middle itself
-          if (arr[mid] == x)
-              return mid;
-          // If element is smaller than mid, then it can only be present in left subarray
-          if (arr[mid] > x)
-              return binarySearch(arr, low, mid - 1, x);
-          // Else the element can only be present in right subarray
-          return binarySearch(arr, mid + 1, high, x);
-      }
-      // We reach here when element is not present in array
-      return -1;
-  }
-  ```
-  <br>
+```C++
+// Recursive Method
+// Array arr[low...high] is sorted
+int binarySearch(int arr[], int low, int high, int x)
+{
+    if (high >= low) {
+        int mid = (high - low) / 2;
+        // If the element is present at the middle itself
+        if (arr[mid] == x)
+            return mid;
+        // If element is smaller than mid, then it can only be present in left subarray
+        if (arr[mid] > x)
+            return binarySearch(arr, low, mid - 1, x);
+        // Else the element can only be present in right subarray
+        return binarySearch(arr, mid + 1, high, x);
+    }
+    // We reach here when element is not present in array
+    return -1;
+}
+```
+<br>
 
-  - **Time Complexity**: **$O(log n)$**
-  <br> 
+- **Time Complexity**: **$O(log n)$**
+<br> 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="Sort_Algo"></span>
 
@@ -694,117 +748,182 @@ Sorting algorithms are used to rearrange the elements in an array or a given dat
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="bubble"></span>
 
-- ## Bubble Sort
-  - Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
-  <br>
-  <img src="Pic/bubble-short.png">
-  <br>
+## Bubble Sort
+- Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high.
+<br>
+<img src="Pic/bubble-short.png">
+<br>
 
-  ```C++
-  // Bubble Sort
-  void bubbleSort(int arr[], int n)
-  {
-      int i, j;
-      for (i = 0; i < n - 1; i++)
-          // Last i elements are already in place
-          for (j = 0; j < n - i - 1; j++)
-              if (arr[j] > arr[j + 1])
-                  swap(&arr[j], &arr[j + 1]);
-  }
-  ```
-  <br>
+```C++
+// Bubble Sort
+void bubbleSort(int arr[], int n)
+{
+    int i, j;
+    for (i = 0; i < n - 1; i++)
+        // Last i elements are already in place
+        for (j = 0; j < n - i - 1; j++)
+            if (arr[j] > arr[j + 1])
+                swap(&arr[j], &arr[j + 1]);
+}
+```
+<br>
 
-  ```C++
-  // Bubble Sort Recursive Approach
-  void bubbleSort(int arr[], int n)
-  {
-      // Base case
-      if (n == 1 || n == 0)
-          return;
-      // One pass of bubble sort. After
-      // this pass, the largest element
-      // is moved (or bubbled) to end.
-      for (int i = 0; i < n - 1; i++)
-          if (arr[i] > arr[i + 1])
-              swap(&arr[i], &arr[i + 1]);
-      // Largest element is fixed,
-      // recur for remaining array
-      bubbleSort(arr, n - 1);
-  }
-  ```
-  - **Time Complexity**
-    - Best Case: **$O(n)$**
-    - Average Case: **$O(n^2)$**
-    - Worst Case: **$O(n^2)$**
+```C++
+// Bubble Sort Recursive Approach
+void bubbleSort(int arr[], int n)
+{
+    // Base case
+    if (n == 1 || n == 0)
+        return;
+    // One pass of bubble sort. After
+    // this pass, the largest element
+    // is moved (or bubbled) to end.
+    for (int i = 0; i < n - 1; i++)
+        if (arr[i] > arr[i + 1])
+            swap(&arr[i], &arr[i + 1]);
+    // Largest element is fixed,
+    // recur for remaining array
+    bubbleSort(arr, n - 1);
+}
+```
+- **Time Complexity**
+  - Best Case: **$O(n)$**
+  - Average Case: **$O(n^2)$**
+  - Worst Case: **$O(n^2)$**
 
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
 <span id="merge"></span>
 
-- ## Merge Sort
-    - Merge Sort is a Divide and Conquer algorithm. It divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves. The merge(arr, l, m, r) is key process that assumes that arr[l..m] and arr[m+1..r] are sorted and merges the two sorted sub-arrays into one.
-    <br>
-    <img src="Pic/MergeSortTutorial.png">
-    <br>
+## Merge Sort
+- It is a sorting algorithm that sorts an array by making comparisons. It starts by dividing an array into sub-array and then recursively sorts each of them. After the sorting is done, it merges them back.
+<br>
+<img src="Pic/MergeSortTutorial.png">
+<br>
 
 
-    ```C++
-      // Merge Sort
-    void merge(int arr[], int beg, int mid, int end)
-    {
-        int i, j, k;
-        int n1 = mid - beg + 1;
-        int n2 = end - mid;
-        // create temp arrays
-        int L[n1], R[n2];
-        // Copy data to temp arrays L[] and R[]
-        for (i = 0; i < n1; i++)
-            L[i] = arr[beg + i];
-        for (j = 0; j < n2; j++)
-            R[j] = arr[mid + 1 + j];
-        // Merge the temp arrays back into arr[l..r]
-        i = 0; // Initial index of first subarray
-        j = 0; // Initial index of second subarray
-        k = l; // Initial index of merged subarray
-        while (i < n1 && j < n2){
-            if (L[i] <= R[j]) {
-                arr[k] = L[i];
-                i++;
-            }
-            else {
-                arr[k] = R[j];
-                j++;
-            }
-            k++;
-        }
-        // Copy the remaining elements of L[], if there are any
-        while (i < n1){
+```C++
+  // Merge Sort
+void merge(int arr[], int beg, int mid, int end)
+{
+    int i, j, k;
+    int n1 = mid - beg + 1;
+    int n2 = end - mid;
+    // create temp arrays
+    int L[n1], R[n2];
+    // Copy data to temp arrays L[] and R[]
+    for (i = 0; i < n1; i++)
+        L[i] = arr[beg + i];
+    for (j = 0; j < n2; j++)
+        R[j] = arr[mid + 1 + j];
+    // Merge the temp arrays back into arr[l..r]
+    i = 0; // Initial index of first subarray
+    j = 0; // Initial index of second subarray
+    k = l; // Initial index of merged subarray
+    while (i < n1 && j < n2){
+        if (L[i] <= R[j]) {
             arr[k] = L[i];
             i++;
-            k++;
         }
-        // Copy the remaining elements of R[], if there are any
-        while (j < n2){
+        else {
             arr[k] = R[j];
             j++;
-            k++;
+        }
+        k++;
+    }
+    // Copy the remaining elements of L[], if there are any
+    while (i < n1){
+        arr[k] = L[i];
+        i++;
+        k++;
+    }
+    // Copy the remaining elements of R[], if there are any
+    while (j < n2){
+        arr[k] = R[j];
+        j++;
+        k++;
+    }
+}
+// beg is for left index and end is right index of the sub-array of arr to be sorted
+void mergeSort(int arr[], int beg, int end)
+{
+  if (beg < end){  
+    int mid = (beg + end) / 2;  
+    mergeSort(a, beg, mid);  
+    mergeSort(a, mid + 1, end);  
+    merge(a, beg, mid, end);  
+  }  
+}
+```
+<img src="Pic/Merge-sort-example-300px.gif">
+
+- **Time Complexity**
+  - Best Case: **$O(nlogn)$**
+  - Average Case: **$O(nlogn)$**
+  - Worst Case: **$O(nlogn)$**
+
+<div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
+<span id="quick">
+
+## Quick Sort
+- It is an algorithm of Divide & Conquer type.
+
+- **Divide**
+  - Rearrange the elements and split arrays into two sub-arrays and an element in between search that each element in left sub array is less than or equal to the average element and each element in the right sub- array is larger than the middle element.
+
+- **Conquer**
+  - Recursively, sort two sub arrays.
+
+- **Combine**
+  - Combine the already sorted array.
+
+```C++
+void swap(int* a, int* b)
+{
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+  
+/* This function takes last element as pivot, places
+the pivot element at its correct position in sorted
+array, and places all smaller (smaller than pivot)
+to left of pivot and all greater elements to right
+of pivot */
+int partition(int arr[], int low, int high)
+{
+    int pivot = arr[high]; // pivot
+    int i
+        = (low
+           - 1); // Index of smaller element and indicates
+                 // the right position of pivot found so far
+  
+    for (int j = low; j <= high - 1; j++) {
+        // If current element is smaller than the pivot
+        if (arr[j] < pivot) {
+            i++; // increment index of smaller element
+            swap(&arr[i], &arr[j]);
         }
     }
-    // beg is for left index and end is right index of the sub-array of arr to be sorted
-    void mergeSort(int arr[], int beg, int end)
-    {
-      if (beg < end){  
-        int mid = (beg + end) / 2;  
-        mergeSort(a, beg, mid);  
-        mergeSort(a, mid + 1, end);  
-        merge(a, beg, mid, end);  
-      }  
-    ```
-    <img src="Pic/Merge-sort-example-300px.gif">
-
-    - **Time Complexity**
-      - Best Case: **$O(nlogn)$**
-      - Average Case: **$O(nlogn)$**
-      - Worst Case: **$O(nlogn)$**
-
-
+    swap(&arr[i + 1], &arr[high]);
+    return (i + 1);
+}
+  
+/* The main function that implements QuickSort
+arr[] --> Array to be sorted,
+low --> Starting index,
+high --> Ending index */
+void quickSort(int arr[], int low, int high)
+{
+    if (low < high) {
+        /* pi is partitioning index, arr[p] is now
+        at right place */
+        int pi = partition(arr, low, high);
+  
+        // Separately sort elements before
+        // partition and after partition
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+```
 <div align="right"><a href="#top" targert="_blacnk"><img src="https://img.shields.io/badge/Back to up-orange?style=for-the-badge&logo=expo&logoColor=white" /></a></div>
